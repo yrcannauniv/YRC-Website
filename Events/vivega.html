@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html>
+<html>
+    <title>YOUTH RED CROSS</title>
+    <link href="../../images/YRC.jpg" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../w3-theme-red.css">
+    <link rel="stylesheet" href="../../Montserrat.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #ff4d4d;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        footer {
+            clear: both;
+            margin-left: 120px
+        }
+
+        li {
+            color: black;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+
+        .space {
+            margin-top: 40px
+        }
+
+        .tab-content {
+            margin-left: 0px;
+        }
+
+        .tab-pane {
+            margin-left: 0px;
+        }
+
+        .w3-content {
+            margin-left: 0px;
+        }
+
+        .just {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .quotes {
+            font-size: 1.2em;
+        }
+    </style>
+    <body onload="start()">
+        <!-- Navbar(Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small">
+            <a href="../../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>HOME</p>
+            </a>
+            <a href="../../about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-user w3-xxlarge "></i>
+                <p>ABOUT</p>
+            </a>
+            <!--   <a href="../../activity.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red"><i class="fa fa-briefcase w3-xxlarge"></i><p>ACTIVITY</p></a> -->
+            <a href="../../Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red  w3-theme-d5 ">
+                <i class="fa fa-calendar w3-xxlarge"></i>
+                <p>EVENTS</p>
+            </a>
+            <a href="../../contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p>CONTACTS</p>
+            </a>
+        </nav>
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+                <a href="../../index.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">HOME</a>
+                <a href="../../about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+                <!--   <a href="../../activity.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">ACTIVITY</a> -->
+                <a href="../../Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+                <a href="../../contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+            <!-- Header -->
+            <div class="w3-hide-large w3-hide-medium space"></div>
+            <div class="w3-display-container w3-center w3-white" id="home">
+                <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+                <p>Anna university, Chennai-600025</p>
+                <img src="../../images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+                <img src="../../images/YRC.jpg" class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+                <hr>
+            </div>
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="v25-tab" data-toggle="tab" href="#v25" role="tab" aria-controls="v25" aria-selected="true">2025</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="false">2019</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="false">2018</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2017</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">2016</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="v25" role="tabpanel" aria-labelledby="v25-tab">
+                        <div class="w3-container w3-center">
+                            <br>
+                            <h2>VIVEGA'25</h2>
+                            <h6 class="w3-hide-large w3-hide-medium">(For more details view the site in Desktop)</h6>
+                        </div>
+                        <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                            <p>
+                                <b>
+                                    <span class="w3-text-red "></span>
+                                </b>
+                            </p>
+                        </div>
+                        <!-- About Section -->
+                        <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 just">
+                                    <br>
+                                    <br>
+                                    <font size="3.5" face="Montserrat">
+                                        <span class="quotes">
+                                            <center>
+                                                <b>“Taking Smiles to Miles”</b>
+                                            </center>
+                                        </span>
+                                        <br> VIVEGA'25 was conducted on 01.02.2025 (Saturday) at the TAG Auditorium. The event was inaugurated by Thiru. Johny Tom Varghese IAS, Director of Children Welfare and Special Services GovtTN, along with Dr. S. Thanigaiarasu, Professor, Department of Aerospace Engineering, MIT Campus, Anna University, in the presence of Dr. D. Narashiman (Programme Officer, Unit-1), Dr. R. Lavanya (Programme Officer, Unit-3), Mr. P. Balaji (CEG Alumni - 2007 Passed Out), Mrs. P. Sundaravalli (CEG Alumni - 2008 Passed Out) and Mr. E. Kuraloviyan (CEG Alumni - 2009 Passed Out) CEG Campus, Anna University.Throughout the day, various competitions were conducted, including Essay Writing, Poetry Writing, Singing, Dancing, Drawing, and Newspaper Dressing. Children from the following 5 Orphanages/Homes participated.
+                                    </font>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="mySlides25" src="images/vivega/2025/0.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/1.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/2.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/3.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/4.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/5.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/6.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/7.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/8.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/9.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/10.jpg" style="width:100%">
+                                    <img class="mySlides25" src="images/vivega/2025/11.jpg" style="width:100%">
+
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <br>
+                                    <font size="3.5" face="Montserrat">
+                                        <ul>
+                                            <li> Webb’s Memorial Orphanage, St. Thomas Mount</li>
+                                            <li> Sevalaya, Thiruvanmiyur </li>
+                                            <li> Rainbow Homes, Purasaiwalkam</li>
+                                            <li> Rainbow Homes, Chetpet</li>
+                                            <li> Avvai Home & Orphanage, Adyar</li>
+                                        </ul>
+                                        <br> In the evening valedictory function, speeches were delivered to encourage the students and instill a sense of confidence. Finally prizes were distributed to the winners by chief guests Aluminis and stationery items, bags, participation certificates, notebooks were given to the all participants. In addition snacks, lunch and transportation facilities were provided to the participants with the help of sponsors. <br>
+                                        <br>
+                                        <b>
+                                            <i>Beneficiary:</i>
+                                        </b> 148 Orphan students from the above 5 Orphanages / Homes in and around Chennai. <br>
+                                        <br>
+                                        <b>
+                                            <i>Sponsors:</i>
+                                        </b>
+                                        <ul>
+                                            <li>YRC – CEG Alumni</li>
+                                            <li>Printers Desk</li>
+                                        </ul>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                        <div class="w3-container w3-center">
+                            <br>
+                            <h2>VIVEGA'19</h2>
+                            <h6 class="w3-hide-large w3-hide-medium">(For more details view the site in Desktop)</h6>
+                        </div>
+                        <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                            <p>
+                                <b>
+                                    <span class="w3-text-red "></span>
+                                </b>
+                            </p>
+                        </div>
+                        <!-- About Section -->
+                        <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 just">
+                                    <br>
+                                    <br>
+                                    <font size="3.5" face="Montserrat">
+                                        <span class="quotes">
+                                            <center>
+                                                <b>“Inspire at will”</b>
+                                            </center>
+                                        </span>
+                                        <br> VIVEGA’19 was conducted on 06.01.2019 (Sunday). The event was inaugurated by Mr. Ezhilarasan, Founder of Dreams NGO along with Dr.B.Kumar, HOD, Department of Printing Technology, College of Engineering Guindy & YRC Coordinator, Anna University in the presence of Dr.D.Narashiman (Programme Officer, Unit-1) and Dr.V.Gomathi (Programme Officer, Unit-2) at TAG Auditorium, CEG Campus, Anna University. During the day various competitions like Essay Writing, Poetry Writing, Quiz, Singing, Dancing, Debate, Drawing, Art from Waste and Newspaper Dressing were conducted. Children from the following 6 Orphanages / Homes participated.
+                                    </font>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="mySlides3" src="images/vivega/2019/1.jpg" style="width:100%">
+                                    <img class="mySlides3" src="images/vivega/2019/2.jpg" style="width:100%">
+                                    <img class="mySlides3" src="images/vivega/2019/3.jpg" style="width:100%">
+                                    <img class="mySlides3" src="images/vivega/2019/4.jpg" style="width:100%">
+                                    <img class="mySlides3" src="images/vivega/2019/5.jpg" style="width:100%">
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <br>
+                                    <font size="3.5" face="Montserrat">
+                                        <ul>
+                                            <li>New Hope & New Life Charity, Perumbakkam</li>
+                                            <li>Jeevan Roshini Charitable Trust, Kovilampakkam</li>
+                                            <li>Rainbow Homes, Purasaiwalkam</li>
+                                            <li>Rainbow Homes, Chetpet</li>
+                                            <li>Jeevadhanam Trust, Adyar</li>
+                                            <li>Nesakaram Seeds, Nungambakkam</li>
+                                        </ul>
+                                        <br> In the evening valedictory function, speeches were delivered to encourage the students and instill a sense of confidence. Finally prizes were distributed to the winners by chief guests Dr.Sujatha Surappa, Dr.Vasanthi Babu, Student Councellor, CEG and Mr.Arjun (Actor) and stationery items, bags, participation certificates, notebooks were given to the all participants. In addition snacks, lunch and transportation facilities were provided to the participants with the help of sponsors. <br>
+                                        <br>
+                                        <b>
+                                            <i>Beneficiary:</i>
+                                        </b> 151 Orphan students from the above 6 Orphanages / Homes in and around Chennai. <br>
+                                        <br>
+                                        <b>
+                                            <i>Sponsors:</i>
+                                        </b>
+                                        <ul>
+                                            <li>YRC – CEG Alumni</li>
+                                            <li>Alma Group of Companies</li>
+                                            <li>Bbeez</li>
+                                            <li>Sri Chain Granites</li>
+                                            <li>Varanaa Industries</li>
+                                            <li>Sri Sairam Caterers</li>
+                                            <li>Printers Desk</li>
+                                        </ul>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                        <div class="w3-container w3-center">
+                            <br>
+                            <h2>VIVEGA'18</h2>
+                            <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                        </div>
+                        <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                            <p>
+                                <b>
+                                    <span class="w3-text-red "></span>
+                                </b>
+                            </p>
+                        </div>
+                        <!-- About Section -->
+                        <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 just">
+                                    <br>
+                                    <br>
+                                    <span class="quotes">
+                                        <center>
+                                            <b>“Ignite the light of wit”</b>
+                                        </center>
+                                    </span>
+                                    <br> VIVEGA’18 was conducted on 07.01.2018 (Sunday). The event was inaugurated by Ms. Shanthi Soundararajan, Track & Field Athlete, along with Dr.B.Kumar, HOD, Dept. of Printing Technology, CEG Campus & YRC Coordinator, Anna University and Mr.D.Narashiman (Programme Officer, Unit- 1) at Ada Lovelace Auditorium, Dept. of Information Science & Technology, CEG Campus, Anna University. During the day various competitions like Essay Writing, Poetry Writing, Quiz, Singing, Dancing, Debate, Drawings, Art from Waste and Paper Dressing were conducted. Children from the following 7 Orphanages / Homes participated.
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="mySlides2" src="images/vivega/2018/1.jpg" style="width:100%">
+                                    <img class="mySlides2" src="images/vivega/2018/2.jpg" style="width:100%">
+                                    <img class="mySlides2" src="images/vivega/2018/3.jpg" style="width:100%">
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <br>
+                                    <font size="3.5" face="Montserrat">
+                                        <ul>
+                                            <li>Ramakrishna Mission Student’s Home, Mylapore</li>
+                                            <li>Christ Faith Home For Children, Porur</li>
+                                            <li>Nesakaram Seeds, Nungambakkam</li>
+                                            <li>Jeevan Roshini Charitable Trust, Kovilampakkam</li>
+                                            <li>New Hope & New Life Charity, Perumbakkam</li>
+                                            <li>Arul Oli Charitable Trust, Trisulam</li>
+                                            <li>Children’s Home of Hope, Maduravoyal</li>
+                                        </ul>
+                                        <br> In the evening valedictory function, speeches were delivered to encourage the students and instill a sense of confidence. Finally prizes were distributed to the winners by chief guest Mr.Theetharappan, Sri Sairam Caterers and stationery items, bags, participation certificates and notebooks were given to the all participants. In addition snacks, lunch and transportation facilities were provided to the participants with the help of sponsors. <br>
+                                        <br>
+                                        <b>
+                                            <i>Beneficiary:</i>
+                                        </b> 175 Orphan students from the above 7 Orphanages / Homes in and around Chennai. <br>
+                                        <br>
+                                        <b>
+                                            <i>Sponsors:</i>
+                                        </b>
+                                        <ul>
+                                            <li>YRC – CEG Alumni</li>
+                                            <li>Sri Sairam Caterers</li>
+                                            <li>Alma Group of Companies</li>
+                                            <li>Puri Jaganathan Religious Trust</li>
+                                            <li>Idhayam Group of Companies</li>
+                                            <li>Printers Desk</li>
+                                            <li>Narmada Publications</li>
+                                        </ul>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="w3-container w3-center">
+                            <br>
+                            <h2>VIVEGA'17</h2>
+                            <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                        </div>
+                        <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                            <p>
+                                <b>
+                                    <span class="w3-text-red "></span>
+                                </b>
+                            </p>
+                        </div>
+                        <!-- About Section -->
+                        <div class="w3-contentw3-content w3-justify w3-text-grey" id="about"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 just">
+                                    <br>
+                                    <br>
+                                    <span class="quotes">
+                                        <center>
+                                            <b>“Discovering Dreams”</b>
+                                        </center>
+                                    </span>
+                                    <br> VIVEGA’17 was conducted on on 05.02.2017(Sunday). The event was inaugurated by Mr.K.P.Srikumar Menon, Founder and CEO of skillsgrow.com, Dr.K.Ganapathy Subramaniam, Pediatric Cardio Vascular Surgeon along with Mr.D.Narashiman (Programme Officer, Unit-1) at Henry Maudslay Hall, Department of Mechanical Engineering, CEG Campus, Anna University. During the day various competitions like Essay Writing, Poetry Writing, Quiz, Singing, Dancing, Debate, Drawings, Art from Waste and Paper Dressing were conducted. Children from the following 7 Orphanages / Homes participated.
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="mySlides" src="images/vivega/2017/1.jpg" style="width:100%">
+                                    <img class="mySlides" src="images/vivega/2017/2.jpg" style="width:100%">
+                                    <img class="mySlides" src="images/vivega/2017/3.jpg" style="width:100%">
+                                    <img class="mySlides" src="images/vivega/2017/4.jpg" style="width:100%">
+                                    <img class="mySlides" src="images/vivega/2017/5.jpg" style="width:100%">
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <font size="3.5" face="Montserrat">
+                                        <ul>
+                                            <li>Jeevanaadi, Kodambakkam</li>
+                                            <li>Jeevanaadi, Vadapalani</li>
+                                            <li>Jeevanaadi, Choolaimedu</li>
+                                            <li>Roshini Home For Children, Sunnambu kolathur</li>
+                                            <li>New Hope & New Life Charity, Medavakkam</li>
+                                            <li>Christ Faith Home For Children, Manapakkam</li>
+                                            <li>Faith Home for Children, Porur</li>
+                                        </ul>
+                                        <br> In the evening valedictory function, speeches were delivered to encourage the students and instill a sense of confidence. Finally prizes were distributed to the winners by chief guest Mr.V.Arun Vijay, Actor and stationery items, bags, participation certificates and notebooks were given to the all participants. In addition snacks, lunch and transportation facilities were provided to the participants with the help of sponsors. <br>
+                                        <br>
+                                        <b>
+                                            <i>Beneficiary:</i>
+                                        </b> 160 Orphan students from the above 7 Orphanages / Homes in and around Chennai. <br>
+                                        <br>
+                                        <b>
+                                            <i>Sponsors:</i>
+                                        </b>
+                                        <ul>
+                                            <li>YRC – CEG Alumni</li>
+                                            <li>Sri Sairam Caterers</li>
+                                            <li>Printers Desk</li>
+                                            <li>Narmada Publications</li>
+                                            <li>SM Fabs</li>
+                                        </ul>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="w3-container w3-center">
+                            <br>
+                            <h2>VIVEGA'16</h2>
+                        </div>
+                        <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                            <p>
+                                <b>
+                                    <span class="w3-text-red "></span>
+                                </b>
+                            </p>
+                        </div>
+                        <!-- About Section -->
+                        <div class="w3-contentw3-content w3-justify" id="about">
+                            <h2></h2>
+                            <div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <br>
+                                            <font size="3.5" face="Montserrat">
+                                                <span class="quotes">
+                                                    <center>
+                                                        <b>“A foot forward...”</b>
+                                                    </center>
+                                                </span>
+                                                <br> VIVEGA’16 was conducted on 20.03.2016(Sunday). The event was inaugurated by Mr.K.Vipinendran, Associate Professor, Department of Printing Technology, along with Mr.D.Narashiman(Programme Officer Unit-1). During the day various competitions like Essay Writing, Poetry Writing, Quiz, Singing, Dancing, Debate, Drawings, Art from Waste and Paper Dressing were conducted. 130 children from the following 6 homes participated. <br>
+                                                <br>
+                                                <ul>
+                                                    <li>Anaikkum Karangal, Ullagaram
+                                                    <li>Avvai Home & Orphanage, Adyar
+                                                    <li>Jeevan Roshini Charitable Trust, Kovilambakkam
+                                                    <li>Solomon Children Home, Alwarthirunagar
+                                                    <li>Thiruvalluvar Gurukulam, Saidapet
+                                                    <li>Webb’s Memorial Orphanage, St. Thomas Mount
+                                                </ul>
+                                            </font>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img class="mySlides1" src="images/vivega/2016/1.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/vivega/2016/2.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/vivega/2016/3.jpg" style="width:100%">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <font size="3.5" face="Montserrat"> In the evening valedictory function, speeches are delivered to encourage the students and instill a sense of confidence. Finally prizes are distributed to the winners and stationery items, bags and notebooks are given to the all participants. In addition breakfast, snacks, lunch and transportation facilities are provided to the participants with the help of sponsors. <br><br><b><i>Beneficiary:</i></b> 130 Orphan students from the above 6 Orphanages / Homes in and around Chennai. <br><br><b>
+                                                <i>Sponsors:</i></b><ul><li>YRC – CEG Alumni 
+                                                    <li>Vimmudi Bangaru Jewelers</li>
+                                                    <li>Youth Caterers   </li>
+                                                    <li>Narmada Publications  </li> 
+                                                    <li>Maxican   </li>
+                                                </ul>  </font>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <!-- Time --><script type="text/javascript">
+                    var d = new Date();
+                    var weekday = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndexd++;
+                        if (myIndexd > x.length) {
+                            myIndexd = 1;
+                        }
+                        x[myIndexd - 1].style.display = "block";
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
+                    }
+
+                    function carousel1() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides1");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndexe++;
+                        if (myIndexe > x.length) {
+                            myIndexe = 1;
+                        }
+                        x[myIndexe - 1].style.display = "block";
+                        setTimeout(carousel1, 2000); // Change image every 2 seconds
+                    }
+
+                    function carousel2() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides2");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndexf++;
+                        if (myIndexf > x.length) {
+                            myIndexf = 1;
+                        }
+                        x[myIndexf - 1].style.display = "block";
+                        setTimeout(carousel2, 2000); // Change image every 2 seconds
+                    }
+
+                    function carousel3() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides3");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndexg++;
+                        if (myIndexg > x.length) {
+                            myIndexg = 1;
+                        }
+                        x[myIndexg - 1].style.display = "block";
+                        setTimeout(carousel3, 2000); // Change image every 2 seconds
+                    }
+
+                    function carousel4() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides25");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndexh++;
+                        if (myIndexh > x.length) {
+                            myIndexh = 1;
+                        }
+                        x[myIndexh - 1].style.display = "block";
+                        setTimeout(carousel4, 2000); // Change image every 2 seconds
+                    }
+
+                    function start() {
+                        var today = new Date();
+                        var h = today.getHours();
+                        var m = today.getMinutes();
+                        var s = today.getSeconds();
+                        // add a zero in front of numbers
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.getElementById('txt').innerHTML = d.getDate() + " " + weekday[d.getMonth()] + " " + d.getUTCFullYear() + ", " + h + ":" + m + ":" + s;
+                        setTimeout(start, 500);
+                    }
+
+                    function checkTime(i) {
+                        if (i < 10) {
+                            i = "0" + i;
+                        }
+                        return i;
+                    }
+                    var myIndexd = 0;
+                    var myIndexe = 0;
+                    var myIndexf = 0;
+                    var myIndexg = 0;
+                    var myIndexh = 0;
+                    carousel();
+                    carousel1();
+                    carousel2();
+                    carousel3();
+                    carousel4();
+                </script>
+    </body>
+</html>

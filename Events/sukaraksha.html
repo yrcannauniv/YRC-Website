@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YOUTH RED CROSS</title>
+    <link href="../../images/YRC.jpg" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../w3-theme-red.css">
+    <link rel="stylesheet" href="../../Montserrat.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        .w3-sidebar {
+            width: 120px;
+            background: #ff4d4d;
+        }
+
+        #main {
+            margin-left: 120px
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        footer {
+            margin-left: 120px
+        }
+
+        li {
+            color: black;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+
+        .space {
+            margin-top: 40px
+        }
+
+        .tab-content {
+            margin-left: 0px;
+        }
+
+        .tab-pane {
+            margin-left: 0px;
+        }
+
+        .w3-content {
+            margin-left: 0px;
+        }
+
+        .just {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .quotes {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body onload="start()">
+    <!-- Navbar(Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small">
+        <a href="../../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="../../about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-user w3-xxlarge "></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="../../Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red  w3-theme-d5 ">
+            <i class="fa fa-calendar w3-xxlarge"></i>
+            <p>EVENTS</p>
+        </a>
+        <a href="../../contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACTS</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+            <a href="../../index.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">HOME</a>
+            <a href="../../about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+            <a href="../../Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+            <a href="../../contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <div class="w3-hide-large w3-hide-medium space"></div>
+        <div class="w3-display-container w3-center w3-white" id="home">
+            <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+            <p>Anna university, Chennai-600025</p>
+            <img src="../../images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+            <img src="../../images/YRC.jpg" class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+            <hr>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="year25-tab" data-toggle="tab" href="#latest_25" role="tab" aria-controls="latest_25" aria-selected="true">2025</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="false">2019</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="false">2018</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2017</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">2016</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content" id="myTabContent">
+                <!-- UYIRTHULI "25 content"-->
+                <div class="tab-pane fade show active" id="latest_25" role="tabpanel" aria-labelledby="year25-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>Uyirthuli'25</h2>
+                        <h6>(Blood Donation Camp)</h6>
+                        <h6 class="w3-hide-large w3-hide-medium">(For more details view the site in Desktop)</h6>
+                    </div>
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+                    <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 just"><br>
+                                <font size="3.5" face="Montserrat">
+                                    <span class="quotes">
+                                        <center><b>"Donate The Blood For The Reason And The Reason Is To Save Life"</b></center>
+                                    </span><br>
+                                    <b><i>Date :</i></b> 12.03.2025 (Thursday)<br><br>
+                                    <b><i>Venue :</i></b> CEG – Vivekananda Auditorium, Anna University<br><br>
+                                    <b><i>Beneficiary :</i></b> Indian Red Cross Society Blood Bank, Chennai-8<br><br>
+                                    <b><i>No. of Units :</i></b> 157 Units<br><br>
+                                    he blood donation camp was organized by the Youth Red Cross Volunteers (YRC) of College of Engineering Guindy - in collaboration with the Indian Red Cross Society (IRCS) and sponsored by HDFC Bank. The primary objective of blood donation was to collect blood from donors of various blood groups. These collected units will be utilized by the Indian Red Cross Society to support patients in dire need of blood transfusions, including accident victims, patients undergoing surgery, individuals with chronic illnesses, and those suffering from blood disorders.
+                                </font>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="mySlides4" src="images/Uyirthuli/25/1.jpg" style="width:100%">
+                                <img class="mySlides4" src="images/Uyirthuli/25/2.jpg" style="width:100%">
+                                <img class="mySlides4" src="images/Uyirthuli/25/3.jpg" style="width:100%">
+                                <img class="mySlides4" src="images/Uyirthuli/25/4.jpg" style="width:100%">
+                                <img class="mySlides4" src="images/Uyirthuli/25/5.jpg" style="width:100%">
+                            </div>
+                            <div class="col-md-12"><br>
+                                <font size="3.5" face="Montserrat">
+                                  he event took place at Vivekananda Auditorium at 9:30 AM, The camp was inaugurated by Dr. K. S. Eswara Kumar, Dean of CEG, along with esteemed dignitaries including Dr. S. Thanigaiararu, YRC University Coordinator, Mr. N. Deva Pichai, Corporate Social Responsibility Manager, and Mr. Syed, Head Organizer - IRCS. .It was a great success with more than <b>251</b> registrations and <b>157</b> donations. The camp started at 9.30 am went on till 3.30 pm. An experienced medical team from the blood bank of Indian Red Cross Society collected blood from the donors. 
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>Uyirthuli'19</h2>
+                        <h6>(Blood Donation Camp)</h6>
+                        <h6 class="w3-hide-large w3-hide-medium">(For more details view the site in Desktop)</h6>
+                    </div>
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+                    <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 just"><br>
+                                <font size="3.5" face="Montserrat">
+                                    <span class="quotes">
+                                        <center><b>"Every drop counts-Donate Blood"</b></center>
+                                    </span><br>
+                                    <b><i>Date :</i></b> 17.09.2019 (Thursday)<br><br>
+                                    <b><i>Venue :</i></b> CEG - Alumni Centre, Anna University<br><br>
+                                    <b><i>Beneficiary :</i></b> Indian Red Cross Society Blood Bank, Chennai-8<br><br>
+                                    <b><i>No. of Units :</i></b> 121 Units<br><br>
+                                    UYIRTHULI'19 was organized by the Youth Red Cross of CEG 17.09.2019 (Tuesday) at CEG - Alumni Centre. It was inaugurated by YRC program officers Dr.D.NARASHIMAN (UNIT 1), Dr.V.GOMATHI (UNIT 2), Dr.R.LAVANYA (UNIT 3), and Dr.K.MALARMOHAN (UNIT 4).
+                                </font>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="mySlides3" src="images/Uyirthuli/19/1.jpg" style="width:100%">
+                                <img class="mySlides3" src="images/Uyirthuli/19/2.jpg" style="width:100%">
+                                <img class="mySlides3" src="images/Uyirthuli/19/3.jpg" style="width:100%">
+                                <img class="mySlides3" src="images/Uyirthuli/19/4.jpg" style="width:100%">
+                                <img class="mySlides3" src="images/Uyirthuli/19/5.jpg" style="width:100%">
+                            </div>
+                            <div class="col-md-12"><br>
+                                <font size="3.5" face="Montserrat">
+                                    It was a great success with more than 246 registrations and 111 donations. The camp started at 9.30 am went on till 3.30 pm. An experienced medical team from the blood bank of Indian Red Cross Society collected blood from the donors.</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>Sukaraksha'18</h2>
+                        <h6>(Blood Donation Camp)</h6>
+                        <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                    </div>
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+                    <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 just"><br><br>
+                                <span class="quotes">
+                                    <center><b>"Give the gift of life"</b></center>
+                                </span><br>
+                                <b><i>Date :</i></b> 30.08.2018 (Thursday)<br><br>
+                                <b><i>Venue :</i></b> CEG - Alumni Centre, Anna University<br><br>
+                                <b><i>Beneficiary :</i></b> Indian Red Cross Society Blood Bank, Chennai-8<br><br>
+                                <b><i>No. of Units :</i></b> 121 Units<br><br>
+                                SUKARAKSHA'18 was organised by the Youth Red Cross of CEG 30.08.2018(Thursday) at CEG - Alumni Centre. It was a great success with more than 250 registrations and 121 donations. The camp started at 10.00 am went on till 3.30 pm. An experienced medical team from the blood bank of Indian Red Cross Society collected blood from the donors.
+                            </div>
+                            <div class="col-md-6">
+                                <img class="mySlides2" src="images/Uyirthuli/sukaraksha/18/suk2018-1.jpg" style="width:100%">
+                                <img class="mySlides2" src="images/Uyirthuli/sukaraksha/18/suk2018-2.jpg" style="width:100%">
+                                <img class="mySlides2" src="images/Uyirthuli/sukaraksha/18/suk2018-6.jpg" style="width:100%">
+                                <img class="mySlides2" src="images/Uyirthuli/sukaraksha/18/suk2018-4.jpg" style="width:100%">
+                                <img class="mySlides2" src="images/Uyirthuli/sukaraksha/18/suk2018-5.jpg" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>Sukaraksha'17</h2>
+                        <h6>(Blood Donation Camp)</h6>
+                        <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                    </div>
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+                    <div class="w3-content w3-content w3-justify w3-text-grey" id="about"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 just"><br><br>
+                                <span class="quotes">
+                                    <center><b>"Blood is meant to circulate, so pass it around!"</b></center>
+                                </span>
+                                <br>
+                                <b><i>Date :</i></b> 07.09.2017 (Friday)<br><br>
+                                <b><i>Venue :</i></b> CEG - Alumni Centre, Anna University<br><br>
+                                <b><i>Beneficiary :</i></b> Blood Bank of Royapettah Government Hospital<br><br>
+                                <b><i>No. of Units :</i></b> 134 Units<br><br>
+                                The Doctors with Medical Teams from the Royapettah Government Hospital arrived at the Camp site around 9:00 a.m. The camp inaugurated by Mr.D.Narasimhan, YRC Programme Officer donating the blood.
+                            </div>
+                            <div class="col-md-6">
+                                <img class="mySlides" src="images/Uyirthuli/sukaraksha/17/suk1.jpg" style="width:100%">
+                                <img class="mySlides" src="images/Uyirthuli/sukaraksha/17/suk2.jpg" style="width:100%">
+                                <img class="mySlides" src="images/Uyirthuli/sukaraksha/17/suk3.jpg" style="width:100%">
+                            </div>
+                            <div class="col-md-12">
+                                <br><br>
+                                <font size="3.5" face="Montserrat">
+                                    Then, the students started pouring in. Without any second thought, sans expectations to get anything in return but with the thought to save a life, many donated their blood. The students registered their name, department, blood type and phone numbers in the Registration Form. Their weights were noted and based on their hemoglobin count they were checked if they were eligible to donate blood. The donors were handed refreshments after they donated blood and presented with a certificate for their priceless service to humanity. Not just students, many teaching and non teaching staffs of Anna university also graced the event with their presence and contributed their blood.<br><br>
+                                    The event happened with such vigour and excitement. More than 200 registrations and 134 donors, the camp was an eminent success and came to close around 3:00 p.m. after which the blood was safely taken by the hospital authorities back to the blood bank for use under emergencies. This camp stands as a testimony to every student's social concern and moral instinct to serve the society.
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>Sukaraksha'16</h2>
+                        <h6>(Blood Donation Camp)</h6>
+                    </div>
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+                    <div class="w3-content w3-content w3-justify" id="about">
+                        <h2></h2>
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6"><br>
+                                        <font size="3.5" face="Montserrat">
+                                            <b><i>Date :</i></b> 31.08.2016 (Wednesday)<br><br>
+                                            <b><i>Venue :</i></b> CEG - Alumni Centre, Anna University<br><br>
+                                            <b><i>Beneficiary :</i></b> Blood Bank of Cancer Institute, Chennai-20<br><br>
+                                            <b><i>No. of Units :</i></b> 164 units<br><br>
+                                            The Youth Red Cross of CEG Campus, Anna University jointly with Cancer Institute, Adyar organised a Blood Donation Camp named SUKARAKSHA'16 on 31.08.2016 (Wednesday) at the CEG-Alumni Centre, Anna University. A Medical Team from Cancer Institute Blood Bank arrived at 9:00 am with all the necessary equipments and the camp was inaugurated by Mr.D.Narashiman, YRC Programme Officer, CEG Campus around 9:30 am. The donors were first made to register.
+                                        </font>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="mySlides1" src="images/Uyirthuli/sukaraksha/16/suk2016-1.jpg" style="width:100%">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <font size="3.5" face="Montserrat"><br>
+                                            Then they underwent a test to know their Blood Group and Hemoglobin content followed by BP check done by an experienced medical officer. Based on the test results, the donors who were considered eligible to donated about 350 ml of blood. Finally refreshments were provided and a Certificate of Appreciation was given by Cancer Institute. Students, Ph.D. Scholars, Teaching and Non-Teaching Staffs of Anna University donated blood. Dr.P.Narayanasamy, Dean, CEG Campus, Dr.B.Kumar, YRC Programme Coordinator and all the other units YRC Programme Officers of CEG Campus supervised the camp and gave moral support.About 164 units of blood had been collected. The camp came to an end by 3.30 pm.
+                                        </font>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- Time -->
+        <script type="text/javascript">
+            var d = new Date();
+            var weekday = new Array(12);
+            weekday[0] = "Jan";
+            weekday[1] = "Feb";
+            weekday[2] = "Mar";
+            weekday[3] = "Apr";
+            weekday[4] = "May";
+            weekday[5] = "Jun";
+            weekday[6] = "Jul";
+            weekday[7] = "Aug";
+            weekday[8] = "Sep";
+            weekday[9] = "Oct";
+            var myIndexd = 0;
+            var myIndexe = 0;
+            var myIndexf = 0;
+            var myIndexg = 0;
+            weekday[10] = "Nov";
+            weekday[11] = "Dec";
+
+            carousel();
+            carousel1();
+            carousel2();
+            carousel3();
+            carousel4();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndexd++;
+                if (myIndexd > x.length) {
+                    myIndexd = 1
+                }
+                x[myIndexd - 1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+
+            function carousel1() {
+                var i;
+                var x = document.getElementsByClassName("mySlides1");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndexe++;
+                if (myIndexe > x.length) {
+                    myIndexe = 1
+                }
+                x[myIndexe - 1].style.display = "block";
+                setTimeout(carousel1, 2000);
+            }
+
+            function carousel2() {
+                var i;
+                var x = document.getElementsByClassName("mySlides2");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndexf++;
+                if (myIndexf > x.length) {
+                    myIndexf = 1
+                }
+                x[myIndexf - 1].style.display = "block";
+                setTimeout(carousel2, 2000);
+            }
+
+            function carousel3() {
+                var i;
+                var x = document.getElementsByClassName("mySlides3");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndexg++;
+                if (myIndexg > x.length) {
+                    myIndexg = 1
+                }
+                x[myIndexg - 1].style.display = "block";
+                setTimeout(carousel3, 2000);
+            }
+
+            function carousel4() {
+                var i;
+                var x = document.getElementsByClassName("mySlides4");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndexg++;
+                if (myIndexg > x.length) {
+                    myIndexg = 1
+                }
+                x[myIndexg - 1].style.display = "block";
+                setTimeout(carousel4, 2000);
+            }
+
+            function start() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();// add a zero in front of numbers<10
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = d.getDate() + " " + weekday[d.getMonth()] + " " + d.getUTCFullYear() + ", " + h + ":" + m + ":" + s;
+                t = setTimeout('start()', 500);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+        </script>
+    </div>
+</body>
+
+</html>

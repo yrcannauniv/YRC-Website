@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+    <title> YOUTH RED CROSS </title>
+    <link href="images/YRC.jpg" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="w3-theme-red.css">
+    <link rel="stylesheet" href="Montserrat.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .oblist24 .oblist23 {
+            font-family:
+                Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding:
+                8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #ff4d4d;
+        }
+
+        /* Add a left margin to the "page content"
+        that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        footer {
+            margin-left: 120px
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+
+        .space {
+            margin-top: 40px
+        }
+
+        .hidden {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            pointer-events: none;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .visible {
+            opacity: 1;
+            transition: opacity 0.7s ease-in-out;
+            pointer-events: auto;
+            height: auto;
+        }
+
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .buttons {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .buttons button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <!-- Navbar(Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small ">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p> HOME </p>
+            </a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-user w3-xxlarge "></i>
+                <p> ABOUT </p>
+            </a>
+            <!-- <a href="activity.html" class="w3-bar-item w3-button w3-padding-large
+            w3-hover-pale-red "><i class="fa fa-briefcase w3-xxlarge"></i><p>ACTIVITY</p></a> -->
+            <a href="Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+                <i class="fa fa-calendar w3-xxlarge"></i>
+                <p> EVENTS </p>
+            </a>
+            <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d5 w3-hover-pale-red">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p> CONTACTS </p>
+            </a>
+        </nav>
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+                <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important"> HOME </a>
+                <a href="about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important"> ABOUT </a>
+                <!-- <a href="activity.html" class="w3-bar-item w3-button w3-hover-pale-red"
+                style="width:20% !important">ACTIVITY</a> -->
+                <a href="Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important"> EVENTS </a>
+                <a href="contacts.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important"> CONTACTS </a>
+            </div>
+        </div>
+        <br>
+        <!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+            <!-- Header -->
+            <div class="w3-display-container w3-center w3-white" id="contact">
+                <h1 class="w3-jumbo w3-text-red"> YOUTH RED CROSS </h1>
+                <p> Anna university, Chennai-600025 </p>
+                <img src="images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+                <img src="images/YRC.jpg" class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+                <hr>
+            </div>
+            <!-- Time -->
+            <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                <p>
+                    <b>
+                        <span class="w3-text-red "></span>
+                    </b>
+                </p>
+            </div>
+            <!-- About Section -->
+            <div class="w3-content w3-justify w3-text-grey " id="about">
+                <h4 class="w3-center ">
+                    <span class=" w3-wide">
+                        <font color=black> YRC COORDINATOR, ANNA UNIVERSITY </font>
+                    </span>
+                </h4>
+                <div class="w3-center">
+                    <p>
+                        <span class="w3-large"> Prof.Dr.S.THANIGAIARASU </span>
+                        <br>
+                        <span class="w3-large"> HOD, Department of Aerospace Engineering, MIT CAMPUS </span>
+                    </p>
+                </div>
+                <br>
+                <!-- Menu Container -->
+                <div class="w3-container" id="menu">
+                    <div class="w3-content ">
+                        <h4 class="w3-center ">
+                            <span class=" w3-wide"> PROGRAMME OFFICERS, UNIVERSITY DEPARTMENTS </span>
+                        </h4>
+                        <!-- Posts -->
+                        <div class=" w3-margin w3-center menu w3-text-grey" id="ceg">
+                            <hr>
+                            <ul class="w3-ul w3-white  w3-text-grey">
+                                <li class="">
+                                    <h4> CEG CAMPUS </h4>
+                                    <span> Unit - I </span>
+                                    <br>
+                                    <span class="w3-large"> Dr.D.NARASHIMAN </span>
+                                    <br>
+                                    <span> Department of Information Science and Technology </span>
+                                </li>
+                                <li class="">
+                                    <span> Unit - II </span>
+                                    <br>
+                                    <span class="w3-large"> Dr.V.GOMATHI </span>
+                                    <br>
+                                    <span> Department of Electrical and Electronics Engineering </span>
+                                </li>
+                                <li class="">
+                                    <span> Unit - III </span>
+                                    <br>
+                                    <span class="w3-large"> Dr.R.LAVANYA </span>
+                                    <br>
+                                    <span> Department of Media Sciences </span>
+                                </li>
+                                <li class=" w3-hide-medium w3-hide-small">
+                                    <span> Unit - IV </span>
+                                    <br>
+                                    <span class="w3-large"> Dr.K.MALAR MOHAN </span>
+                                    <br>
+                                    <span> Department of Mechanical Engineering </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" w3-margin w3-center menu" id="others">
+                            <ul class="w3-ul w3-white w3-text-grey">
+                                <li class="">
+                                    <h4> AC TECH CAMPUS </h4>
+                                    <span class="w3-large"> Mrs.J.JAYAMUTHUNAGAI </span>
+                                    <br>
+                                    <span> Department of Bio Technology </span>
+                                </li>
+                                <li class="">
+                                    <h4> SAP CAMPUS </h4>
+                                    <span class="w3-large"> Dr.A.KAVITHA </span>
+                                    <br>
+                                    <span> Department of Architecture </span>
+                                </li>
+                                <li class="">
+                                    <h4> MIT CAMPUS </h4>
+                                    <span> Unit - I </span>
+                                    <br>
+                                    <span class="w3-large"> Dr.G.ANANDKUMAR </span>
+                                    <br>
+                                    <span> Department of Automobile Engineering </span>
+                                </li>
+                                <li class="">
+                                    <span> Unit - II </span>
+                                    <br>
+                                    <span class="w3-large"> Dr.M.VIJAYAKARTHICK </span>
+                                    <br>
+                                    <span> Department of Instrumentation Engineering </span>
+                                </li>
+                                <li class="">
+                                    <span> Unit - III </span>
+                                    <br>
+                                    <span class="w3-large"> Ms.S.SRIDEVI </span>
+                                    <br>
+                                    <span> Department of Production Technology </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-container" id="Yrcmenu">
+                    <div class="w3-content ">
+                        <h3 class="w3-center">
+                            <span class=" w3-wide"> ADDRESS </span>
+                        </h3>
+                        <!-- Posts -->
+                        <div class=" w3-margin w3-center menu" id="celladdress">
+                            <h4> YRC CELL (Anna University) </h4>
+                            <ul class="w3-ul  w3-white  w3-text-grey">
+                                <li class="w3-padding-16 w3-large">
+                                <li class=" w3-hide-medium w3-hide-small">
+                                    <span class="w3-large"> Mr.P.Gopalan </span>
+                                    <br>
+                                    <span> Clerical Assistant </span>
+                                </li>
+                                <li> First Floor, CEG Main Building (Near Vivekananda Auditorium), Anna University, Chennai - 600 025
+                                <li> Email: yrccoordinator@annauniv.edu (Only for YRC Enqueries)
+                                <li> Intercom No.8493
+                            </ul>
+                            <img src="images/YRC Cell.jpg" style="width:50%">
+                        </div>
+                        <div class=" w3-margin w3-center menu w3-text-grey" id="tnaddress">
+                            <h4> YRC WING, IRCS: </h4>
+                            <ul class="w3-ul w3-white  w3-text-grey">
+                                <li> Indian Red Cross Society, Tamil Nadu Branch, New # 32 (Old # 50) Red Cross (Montieth) Road, <br> Egmore, Chennai - 600 008.
+                                <li> E-Mail:yrcredcrosstnb@gmail.com, yrcircstnb@gmail.com
+                                <li> Mobile No.9962502734
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End About Section -->
+            </div>
+            <div class="w3-container">
+                <div class="w3-content ">
+                    <h4 class="w3-center ">
+                        <span class=" w3-wide"> REGIONAL COORDINATORS </span>
+                    </h4>
+                    <!-- Posts -->
+                    <div class=" w3-margin w3-center menu w3-text-grey">
+                        <ul class="w3-ul w3-white  w3-text-grey">
+                            <li class="">
+                                <h4> Coimbatore Region </h4>
+                                <span class="w3-large"> Dr.M.Yuvaraju </span>
+                                <br>
+                                <span> Department of Electrical and Electronics Engineering </span>
+                            </li>
+                            <li class="">
+                                <h4> Tiruchirapalli Region </h4>
+                                <span class="w3-large"> Dr.B.Kumaragurubaran </span>
+                                <br>
+                                <span> Department of Mechanical Engineering </span>
+                            </li>
+                            <li class="">
+                                <h4> Tirunelveli Region </h4>
+                                <span class="w3-large"> Dr.B.Jeyanthi </span>
+                                <br>
+                                <span> Department of Science and Humanities </span>
+                            </li>
+                            <li class="">
+                                <h4> Madurai Region </h4>
+                                <span class="w3-large"> Dr.V.Joseph Paul Raj </span>
+                                <br>
+                                <span> Department of Management Studies </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="oblist25" class="visible">
+                        <h4 class="w3-center ">
+                            <span class=" w3-wide"> OFFICE BEARERS <button onclick="showYear(25)" style="transform: scale(1.3); color: gray;">2025</button>
+                                <button onclick="showYear(24)" style="opacity: 0.5; color: purple;">2024</button>
+                                <button onclick="showYear(23)" style="opacity: 0.5; color: orange;">2023</button>
+                            </span>
+                        </h4>
+                        <table border="1">
+                            <tr>
+                                <th>S.No</th>
+                                <th>NAME</th>
+                                <th>DOMAIN</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/yoga-gayathri-a-4522b9293" class="link">YOGA GAYATHRI A</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>SHIYAMALA DEVI J</td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/thulasi-sri-s-94b457297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">THULASI SRI S</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>NEKHA S</td>
+                                <td>EVENTS AND ATTENDANCE</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/surya-s-20051014s" class="link">SURYA S</a>
+                                </td>
+                                <td>EVENTS, HR AND ATTENDANCE</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/kishore-gs-49a47a329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">KISHORE GS</a>
+                                </td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>KALAIARASAN A</td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/puviyarasimp" class="link">PUVIYARASI MOHANA PURUSHOTHAMAN</a>
+                                </td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>ASLIN FRANCY X A</td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/srinithy-sivaraman-b0b0342b8" class="link">SRINITHY S</a>
+                                </td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>11.</td>
+                                <td>MAHALAKSHMI S</td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>12.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/surya-m-3b18b6278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">SURYA M</a>
+                                </td>
+                                <td>DOCUMENTATION AND ATTENDANCE</td>
+
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>MOHAMMED ARSHAD A</td>
+                                <td>DOCUMENTATION AND BLOOD REQUEST</td>
+                            </tr>
+                            <tr>
+                                <td>14.</td>
+                                <td>AKILA K.N.</td>
+                                <td>DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>15.</td>
+                                <td>RISHITHA K.P.</td>
+                                <td>DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>16.</td>
+                                <td>ANUSUYA N</td>
+                                <td>PHOTOGRAPHY, EVENTS AND ATTENDANCE</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="oblist24" class="hidden">
+                        <h4 class="w3-center ">
+                            <span class=" w3-wide"> OFFICE BEARERS <button onclick="showYear(25)" style="opacity: 0.5; color: gray;">2025</button>
+                                <button onclick="showYear(24)" style="transform: scale(1.3); color: purple;">2024</button>
+                                <button onclick="showYear(23)" style="opacity: 0.5; color: orange;">2023</button>
+                            </span>
+                        </h4>
+                        <table border="1">
+                            <tr>
+                                <th>S.No</th>
+                                <th>NAME</th>
+                                <th>DOMAIN</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <a href="http://linkedin.com/in/shreya-karthikeyan-00252128b" class="link">SHREYA KARTHIKEYAN</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/mohammed-madhih-880208264" class="link">MOHAMMED MADHIH H</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/roshini-t-e-12254b309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">ROSHINI T E</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/Megabharathi V" class="link">MEGA BHARATHI V</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>
+                                    <a href="https://1791507066-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.pGGAptgAK4s.O%2Fam%3DAAAg%2Fd%3D1%2Frs%3DAHpOoo-Cic-4VdRMZ7mFCYOA3wzpF7O-6g%2Fm%3D__features__" class="link">VENKAT</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/parameshwari-g-8b04892b7/" class="link">PARAMESHWARI G</a>
+                                </td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/varatharaman-r-28b351308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">VARATHARAMAN R</a>
+                                </td>
+                                <td>EVENTS AND HR</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/jothi-karunya-senthil-kumar-66062b2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">JOTHI KARUNYA S</a>
+                                </td>
+                                <td>HR AND ATTENDANCE</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/alwin-a-493a87271/" class="link">ALWIN A</a>
+                                </td>
+                                <td>HR</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>
+                                    <a href="http://www.linkedin.com/in/shunmathi-r-222b8a255" class="link">SHUNMATHI R</a>
+                                </td>
+                                <td>HR AND DESIGN</td>
+                            </tr>
+                            <td>11.</td>
+                            <td>
+                                <a href="https://www.linkedin.com/in/ganesh-sriramulu-551866284?" class="link">GANESH S</a>
+                            </td>
+                            <td>DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>12.</td>
+                                <td>
+                                    <a href="http://www.linkedin.com/in/subipinsha" class="link">SUBI PINSHA P</a>
+                                </td>
+                                <td>DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/alan-p-10ab712a1/" class="link">BOOBALAN P</a>
+                                </td>
+                                <td>WEBSITE AND ATTENDANCE</td>
+                            </tr>
+                            <tr>
+                                <td>14.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/sushmitha-prakasam-778436286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link"></a>SUSHMITHA P
+                                </td>
+                                <td>BLOOD REQUEST AND ALUMNI RELATION</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="oblist23" class="hidden">
+                        <h4 class="w3-center ">
+                            <span class=" w3-wide">OFFICE BEARERS <button onclick="showYear(25)" style="opacity:0.5; color: gray;">2025</button>
+                                <button onclick="showYear(24)" style="opacity:0.5; color: purple;">2024</button>
+                                <button onclick="showYear(23)" style="transform: scale(1.3); color: orange;">2023</button>
+                            </span>
+                        </h4>
+                        <table border="1">
+                            <tr>
+                                <th>S.No</th>
+                                <th>NAME</th>
+                                <th>DOMAIN</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>ABINITHI R</td>
+                                <td>EVENTS, WEBSITE, ALUMNI RELATION </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/kailaash-marimuthu-a4a45a228/" class="link">KAILAASH R.M</a>
+                                </td>
+                                <td>EVENTS, ALUMNI RELATION</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <a href="#" class="link">NIVETHA R</a>
+                                </td>
+                                <td>ALUMNI RELATION</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>POOJA T</td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>SUDHAKAR K</td>
+                                <td>EVENTS, ALUMNI RELATION</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>DHAVASRI M</td>
+                                <td>ATTENDANCE AND DOCUMENTATION</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>HUSSWATH</td>
+                                <td>ATTENDANCE AND DOCUMENTATION</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>NITHYASHREE K</td>
+                                <td>ATTENDANCE AND DOCUMENTATION</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>ANULATHA S K</td>
+                                <td>CONTENT AND DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>BABY M</td>
+                                <td>CONTENT AND DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>11.</td>
+                                <td>HARIDHARANI T</td>
+                                <td>CONTENT AND DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>12.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/thenambika-p-4827a5246/" class="link">THENAMBIKA P</a>
+                                </td>
+                                <td>CONTENT AND DESIGN</td>
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>MURASOLIMARAN</td>
+                                <td>EVENTS</td>
+                            </tr>
+                            <tr>
+                                <td>14.</td>
+                                <td>DEEPAKRAAJ C N</td>
+                                <td>BLOOD REQUEST</td>
+                            </tr>
+                            <tr>
+                                <td>15.</td>
+                                <td>SANDHYA SS</td>
+                                <td>BLOOD REQUEST</td>
+                            </tr>
+                            <tr>
+                                <td>16.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/muralib1729" class="link">MURALI B</a>
+                                </td>
+                                <td>WEBSITE</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="w3-container w3-grey w3-text-black w3-small w3-hide-small">
+            <div class="w3-row-padding">
+                <div>
+                    <h3> CONTACT </h3>
+                    <hr style="width:100px" class="w3-opacity">
+                    <div class="w3-section">
+                        <p>
+                            <i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>
+                            <a href="https://maps.app.goo.gl/BfNSj8vyAiR3W5rb8"> Location: YRC Cell, Anna University, Chennai-600025</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Intercom: 8493
+                        </p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </footer>
+        <div class="w3-container w3-grey w3-text-black w3-hide-large w3-hide-medium">
+            <div class="w3-row-padding">
+                <div>
+                    <h3> CONTACT </h3>
+                    <hr style="width:100px" class="w3-opacity">
+                    <div class="w3-section">
+                        <p>
+                            <i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Location: YRC Cell, Anna University, Chennai-600025
+                        </p>
+                        <p>
+                            <i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Intercom: 8493
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-grey w3-center w3-text-white"> Design and Maintained by
+                <!--<a href="YRC_Web_Team.html" class="w3-hover-opacity">--> YRC Web Team </a>
+            </div>
+            <script type="text/javascript">
+                function showYear(year) {
+                    const years = [25, 24, 23];
+                    years.forEach(y => {
+                        const element = document.getElementById('oblist' + y);
+                        if (y === year) {
+                            element.classList.remove('hidden');
+                            element.classList.add('visible');
+                        } else {
+                            element.classList.remove('visible');
+                            element.classList.add('hidden');
+                        }
+                    });
+                }
+                var d = new Date();
+                var weekday = new Array(12);
+                weekday[0] = "Jan";
+                weekday[1] = "Feb";
+                weekday[2] = "Mar";
+                weekday[3] = "Apr";
+                weekday[4] = "May";
+                weekday[5] = "Jun";
+                weekday[6] = "Jul";
+                weekday[7] = "Aug";
+                weekday[8] = "Sep";
+                weekday[9] = "Oct";
+                weekday[10] = "Nov";
+                weekday[11] = "Dec";
+
+                function start() {
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
+                    // add a zero in front of numbers
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = d.getDate() + " " + weekday[d.getMonth()] + " " + d.getUTCFullYear() + ", " + h + ":" + m + ":" + s;
+                    t = setTimeout('start()', 500);
+                }
+
+                function checkTime(c) {
+                    if (c < 10) {
+                        i = "0" + c;
+                    }
+                    return c;
+                }
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+                }
+                document.getElementById("myLink").click();
+            </script>
+    </body>
+</html>

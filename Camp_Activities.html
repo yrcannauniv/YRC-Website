@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<title>YOUTH RED CROSS</title>
+<link href="images/YRC.jpg" rel="icon" type="image/x-icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-red.css">
+<link rel="stylesheet" href="Montserrat.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar{width: 120px;background: #ff4d4d;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+footer
+{
+margin-left: 120px
+}
+.pop
+{
+margin-left: 130px
+}
+li
+{
+ color: black;
+}
+myNavbarsmall
+{
+margin-top: 50px
+}
+h4
+{
+font-weight: bold;
+}
+.space
+{
+margin-top: 40px
+}
+.btn{
+    white-space:normal !important;
+    
+}
+
+</style>
+<body onLoad="start()">
+
+<!-- Sidebar -->
+
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebara">
+  <a href="javascript:void(0)" onClick="w3_closea()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove "></i>
+  </a>
+  <div id="item1" class="pop" >
+			<div class="description w3-half w3-hide-small">
+				<h1 class="w3-center">FIRST AID</h1>
+<p>
+	
+</p>	
+				</div>
+				</div>
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">FIRST AID</h5>
+								<p class="">
+
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlides" src="images/2017-2018/camp/firstaid-1.jpg" style="width:100%">
+  <img class="mySlides" src="images/2017-2018/camp/firstaid-2.jpg" style="width:100%">
+  <img class="mySlides" src="images/2017-2018/camp/firstaid-3.jpg" style="width:100%">
+				</div>  
+</div>
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebarb">
+  <a href="javascript:void(0)" onClick="w3_closeb()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  
+   <div id="item1" class="pop" >
+			<div class="description w3-half w3-hide-small">
+				<h1 class="w3-center">FIRE SAFETY</h1>
+<p class="w3-hide-small">
+	
+
+</p>
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">FIRE SAFETY</h5>
+<p class="">
+
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlides" src="images/2017-2018/camp/firesafety1.jpg" style="width:100%">
+  <img class="mySlides" src="images/2017-2018/camp/firesafety2.jpg" style="width:100%">
+  <img class="mySlides" src="images/2017-2018/camp/firesafety4.jpg" style="width:100%">
+				</div>  
+  
+</div>
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebarc">
+  <a href="javascript:void(0)" onClick="w3_closec()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+
+   <div id="item1" class="pop">
+			<div class="description w3-half w3-hide-small">
+				<h1 class="w3-center">PAMPHLETS FOR YOGA DAY</h1>
+<p class="w3-hide-small">
+
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">PAMPHLETS FOR YOGA DAY </h5>
+<p class="">
+
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlidesb" src="images/2017-2018/camp/Pamplet1.jpg" style="width:100%">
+  <img class="mySlidesb" src="images/2017-2018/camp/Pamplet2.jpg" style="width:100%">
+				</div>  
+  
+</div>
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebard">
+  <a href="javascript:void(0)" onClick="w3_closed()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+
+   <div id="item1" class="pop" >
+			<div class="description w3-half w3-hide-small">
+				<h1 class="w3-center">COMPETITIONS ON HYGIENE </h1>
+<p class="w3-hide-small">
+
+</p>	
+				</div>
+				</div>
+<div class="w3-hide-large w3-hide-medium ">	
+<h5 class="w3-center">COMPETITIONS ON HYGIENE </h5>			
+<p class=" ">
+
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlidesc" src="images/2017-2018/camp/School1.jpg" style="width:100%">
+  <img class="mySlidesc" src="images/2017-2018/camp/School2.png" style="width:100%">
+  <img class="mySlidesc" src="images/2017-2018/camp/School3.jpg" style="width:100%">
+				</div>  
+  
+</div>
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebare">
+  <a href="javascript:void(0)" onClick="w3_closee()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+ 
+  <div id="item1" class="pop" >
+			<div class="description w3-half w3-hide-small">
+				<h1 class="w3-center">DOOR TO DOOR SURVEY</h1>
+<p class="w3-hide-small">
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">DOOR TO DOOR SURVEY</h5>
+<p class="">
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlidesd" src="images/2017-2018/camp/survey1.jpg" style="width:100%">
+  <img class="mySlidesd" src="images/2017-2018/camp/survey2.jpg" style="width:100%">
+				</div>  
+ 
+</div>
+<div class="w3-sidebar  w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebarf">
+  <a href="javascript:void(0)" onClick="w3_closef()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+
+   <div id="item1" class="pop" >
+			<div class="description w3-half w3-hide-small">
+				<h2 class="w3-center">MEDICAL CAMP</h2>
+<p class="w3-hide-small">
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium w3-hide-small">
+				<h5 class="w3-center">MEDICAL CAMP</h5>
+<p class="">
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlidese" src="images/2017-2018/camp/medical1.jpg" style="width:100%">
+  <img class="mySlidese" src="images/2017-2018/camp/medical2.jpg" style="width:100%">
+  				</div>  
+  
+</div>
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebarg">
+  <a href="javascript:void(0)" onClick="w3_closeg()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+ 
+  <div id="item1" class="pop" >
+			<div class="description w3-half ">
+				<h1 class="w3-center">RALLY ON HYGIENE</h1>
+<p class="w3-hide-small">
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">RALLY ON HYGIENE</h5>
+<p class="">
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest  " >
+  <img class="mySlidesf" src="images/2017-2018/camp/rally1.jpg" style="width:100%">
+  <img class="mySlidesf" src="images/2017-2018/camp/rally2.jpg" style="width:100%">
+  				</div>  
+ 
+</div>
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebarh">
+  <a href="javascript:void(0)" onClick="w3_closeh()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+ 
+  <div id="item1" class="pop" >
+			<div class="description w3-half ">
+				<h1 class="w3-center">CLEANING ACTIVITY</h1>
+<p class="w3-hide-small">
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">CLEANING ACTIVITY</h5>
+<p class="">
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest">
+  <img class="mySlidesg" src="images/2017-2018/camp/cleaning1.jpg" style="width:100%">
+  <img class="mySlidesg" src="images/2017-2018/camp/cleaning2.jpg" style="width:100%">
+  <img class="mySlidesg" src="images/2017-2018/camp/cleaning3.jpg" style="width:100%">
+				</div>  
+ 
+</div>
+
+<div class="w3-sidebar w3-animate-top w3-white" style="display:none;padding-top:150px" id="mySidebari">
+  <a href="javascript:void(0)" onClick="w3_closei()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+
+   <div id="item1" class="pop" >
+			<div class="description w3-half ">
+				<h1 class="w3-center">STREETPLAY</h1>
+<p class="w3-hide-small">
+</p>	
+				</div>
+				</div> 
+				<div class="w3-hide-large w3-hide-medium ">
+				<h5 class="w3-center">STREETPLAY</h5>
+<p class="">
+</p>
+</div>
+				<div class="w3-content w3-section w3-rest" >
+  <img class="mySlidesh" src="images/2017-2018/camp/streetplay1.jpg" style="width:100%">
+  <img class="mySlidesh" src="images/2017-2018/camp/streetplay2.jpg" style="width:100%">
+				</div>  
+  
+</div>
+
+<!-- Navbar(Sidebar - hidden on small screens) -->
+
+<nav class="w3-sidebar sidea w3-bar-block w3-center w3-small w3-hide-small w3-hide-medium ">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d5 w3-hover-pale-red">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-user w3-xxlarge "></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="activity.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>ACTIVITY</p>
+  </a>
+  <a href="Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-calendar w3-xxlarge"></i>
+    <p>EVENTS</p>
+  </a>
+  <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTS</p>
+  </a>
+</nav>
+
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large myNavbarsmall" id="myNavbar">
+  <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+	<a href="activity.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ACTIVITY</a>
+    <a href="Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+    <a href="contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+  </div>
+</div>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+  <!-- Header -->
+ <div class="w3-hide-large w3-hide-medium space">
+ </div>
+  <div class="w3-display-container w3-center w3-white" id="home">
+    <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+    <p>Anna university, Chennai-600025</p>
+	<img src="images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+	<img src="images/YRC.jpg"  class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+	<hr>
+  </div>
+  
+<!-- Time -->
+<div class="w3-display-topright w3-small w3-hide-small" id="txt">
+  <p><b><span class="w3-text-red "></span></b></p>
+</div>
+<!--open screen-->
+<div class="">
+<div class="w3-container w3-center">
+  <h2>Camp Activities</h2>
+  <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+</div>
+<div class="w3-row-padding w3-margin-top">
+	
+  <div class="w3-third">
+    <div class="w3-card-4">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>FIRST AID</h4>
+    </header>
+      <img src="images/2017-2018/camp/firstaid-2.jpg" style="width:100%" height="25%">
+     <div class="w3-button w3-block w3-dark-grey" onClick="w3_opena()"> + Click for More Details
+	 </div>
+    </div>
+	</div>
+	
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>FIRE SAFETY</h4>
+    </header>
+      <img src="images/2017-2018/camp/firesafety3.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_openb()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>PAMPHLETS FOR YOGA DAY</h4>
+    </header>
+      <img src="images/2017-2018/camp/Pamplet2.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_openc()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>COMPETITIONS ON HYGIENE</h4>
+    </header>
+      <img src="images/2017-2018/camp/School1.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_opend()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>DOOR TO DOOR SURVEY</h4>
+    </header>
+      <img src="images/2017-2018/camp/survey1.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_opene()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>MEDICAL CAMP</h4>
+    </header>
+      <img src="images/2017-2018/camp/medical2.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_openf()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>RALLY ON HYGIENE</h4>
+    </header>
+      <img  src="images/2017-2018/camp/rally2.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_openg()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>CLEANING ACTIVITY</h4>
+    </header>
+      <img src="images/2017-2018/camp/cleaning1.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_openh()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+	<header class="w3-container w3-light-grey w3-center">
+      <h4>STREETPLAY</h4>
+    </header>
+      <img src="images/2017-2018/camp/streetplay1.jpg" style="width:100%" height="25%">
+	  <div class="w3-button w3-block w3-dark-grey" onClick="w3_openi()"> + Click for More Details
+	 </div>
+    </div>
+  </div>
+</div>
+
+ 
+<script>
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_opena() {
+    document.getElementById("mySidebara").style.width = "100%";
+    document.getElementById("mySidebara").style.display = "block";
+	document.getElementById("home").style.display = "none";
+	document.getElementById("home").style.display = "none";
+}
+function w3_closea() {
+    document.getElementById("mySidebara").style.display = "none";
+}
+function w3_openb() {
+    document.getElementById("mySidebarb").style.width = "100%";
+    document.getElementById("mySidebarb").style.display = "block";
+}
+function w3_closeb() {
+    document.getElementById("mySidebarb").style.display = "none";
+}
+function w3_openc() {
+    document.getElementById("mySidebarc").style.width = "100%";
+    document.getElementById("mySidebarc").style.display = "block";
+}
+function w3_closec() {
+    document.getElementById("mySidebarc").style.display = "none";
+}
+function w3_opend() {
+    document.getElementById("mySidebard").style.width = "100%";
+    document.getElementById("mySidebard").style.display = "block";
+}
+function w3_closed() {
+    document.getElementById("mySidebard").style.display = "none";
+}
+function w3_opene() {
+    document.getElementById("mySidebare").style.width = "100%";
+    document.getElementById("mySidebare").style.display = "block";
+}
+function w3_closee() {
+    document.getElementById("mySidebare").style.display = "none";
+}
+function w3_openf() {
+    document.getElementById("mySidebarf").style.width = "100%";
+    document.getElementById("mySidebarf").style.display = "block";
+}
+function w3_closef() {
+    document.getElementById("mySidebarf").style.display = "none";
+}
+function w3_openg() {
+    document.getElementById("mySidebarg").style.width = "100%";
+    document.getElementById("mySidebarg").style.display = "block";
+}
+function w3_closeg() {
+    document.getElementById("mySidebarg").style.display = "none";
+}
+function w3_openh() {
+    document.getElementById("mySidebarh").style.width = "100%";
+    document.getElementById("mySidebarh").style.display = "block";
+}
+function w3_closeh() {
+    document.getElementById("mySidebarh").style.display = "none";
+}
+function w3_openi() {
+    document.getElementById("mySidebari").style.width = "100%";
+    document.getElementById("mySidebari").style.display = "block";
+}
+function w3_closei() {
+    document.getElementById("mySidebari").style.display = "none";
+}
+function w3_openj() {
+    document.getElementById("mySidebarj").style.width = "100%";
+    document.getElementById("mySidebarj").style.display = "block";
+}
+function w3_closej() {
+    document.getElementById("mySidebarj").style.display = "none";
+}
+function w3_openk() {
+    document.getElementById("mySidebark").style.width = "100%";
+    document.getElementById("mySidebark").style.display = "block";
+}
+function w3_closek() {
+    document.getElementById("mySidebark").style.display = "none";
+}
+function w3_openl() {
+    document.getElementById("mySidebarl").style.width = "100%";
+    document.getElementById("mySidebarl").style.display = "block";
+}
+function w3_closel() {
+    document.getElementById("mySidebarl").style.display = "none";
+}
+
+
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+
+//slides
+var myIndex = 0;
+var myIndexa = 0;
+var myIndexb = 0;
+var myIndexc = 0;
+var myIndexd = 0;
+var myIndexe = 0;
+var myIndexf = 0;
+var myIndexg = 0;
+var myIndexh = 0;
+var myIndexi = 0;
+var myIndexj = 0;
+var myIndexk = 0;
+var myIndexl = 0;
+carousel();
+carouselb();
+carouselc();
+carouseld();
+carousele();
+carouself();
+carouselg();
+carouselh();
+carouseli();
+carouselj();
+carouselk();
+carousell();
+
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+function carouselb() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesb");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexb++;
+    if (myIndexb > x.length) {myIndexb = 1}    
+    x[myIndexb-1].style.display = "block";  
+    setTimeout(carouselb, 2000); // Change image every 2 seconds
+}
+function carouselc() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesc");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexc++;
+    if (myIndexc > x.length) {myIndexc = 1}    
+    x[myIndexc-1].style.display = "block";  
+    setTimeout(carouselc, 2000); // Change image every 2 seconds
+}
+function carouseld() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesd");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexd++;
+    if (myIndexd > x.length) {myIndexd = 1}    
+    x[myIndexd-1].style.display = "block";  
+    setTimeout(carouseld, 2000); // Change image every 2 seconds
+}
+function carousele() {
+    var i;
+    var x = document.getElementsByClassName("mySlidese");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexe++;
+    if (myIndexe > x.length) {myIndexe = 1}    
+    x[myIndexe-1].style.display = "block";  
+    setTimeout(carousele, 2000); // Change image every 2 seconds
+}
+function carouself() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesf");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    //alert("hiiiiiiii");
+    myIndexf++;
+    if (myIndexf > x.length) {myIndexf = 1}    
+    x[myIndexf-1].style.display = "block";  
+    setTimeout(carouself, 2000); // Change image every 2 seconds
+}
+function carouselg() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesg");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexg++;
+    if (myIndexg > x.length) {myIndexg = 1}    
+    x[myIndexg-1].style.display = "block";  
+    setTimeout(carouselg, 2000); // Change image every 2 seconds
+}
+function carouselh() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesh");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexh++;
+    if (myIndexh > x.length) {myIndexh = 1}    
+    x[myIndexh-1].style.display = "block";  
+    setTimeout(carouselh, 2000); // Change image every 2 seconds
+}
+function carouseli() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesi");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexi++;
+    if (myIndexi > x.length) {myIndexi = 1}    
+    x[myIndexi-1].style.display = "block";  
+    setTimeout(carouseli, 2000); // Change image every 2 seconds
+}
+function carouselj() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesj");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexj++;
+    if (myIndexj > x.length) {myIndexj = 1}    
+    x[myIndexj-1].style.display = "block";  
+    setTimeout(carouselj, 2000); // Change image every 2 seconds
+}
+function carouselk() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesk");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexk++;
+    if (myIndexk > x.length) {myIndexk = 1}    
+    x[myIndexk-1].style.display = "block";  
+    setTimeout(carouselk, 2000); // Change image every 2 seconds
+}
+function carousell() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesl");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexl++;
+    if (myIndexl > x.length) {myIndexl = 1}    
+    x[myIndexl-1].style.display = "block";  
+    setTimeout(carousell, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+</body>
+</html>

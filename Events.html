@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <title>YOUTH RED CROSS</title>
+    <link href="images/YRC.jpg" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="w3-theme-red.css">
+    <link rel="stylesheet" href="Montserrat.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true, // Auto-play the slider
+            autoplaySpeed: 3000, // Delay between each slide in milliseconds
+            arrows: true, // Display arrows for navigation
+            dots: true // Display dots for navigation
+            // You can add more options as per your requirements, refer to the Slick Slider documentation for more options.
+        });
+    });
+</script>
+
+
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+        .w3-row-padding {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar{width: 120px;background: #ff4d4d;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        footer
+        {
+        margin-left: 120px
+        }
+        .pop
+        {
+        margin-left: 130px
+        }
+        li
+        {
+        color: black;
+        }
+        myNavbarsmall
+        {
+        margin-top: 50px
+        }
+        h4
+        {
+        font-weight: bold;
+        }
+        .space
+        {
+        margin-top: 40px
+        }
+        a.list-group-item {
+        height:auto;
+        min-height:220px;
+        }
+        a.list-group-item.active small {
+        color:#fff;
+        }
+        .stars {
+        margin:20px auto 1px;    
+        }
+        h4
+        {
+        padding-top: 20px;
+        padding-bottom: 2px;
+        }
+        .media-object
+        {
+        padding-top: 10px;
+        padding-bottom: 2px;	
+        }
+        .list-group-item-text
+        {
+        font-size: 1.2em;
+        text-align: justify;
+        text-justify:inter-word;
+        }
+        .list-group-item-heading
+        {
+        font-size: 1.5em; 
+        }
+        a.list-group-item
+        {
+        line-height: 150px;
+        }
+    </style>
+    <body onLoad="start()">
+        <!-- Navbar(Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar sidea w3-bar-block w3-center w3-small w3-hide-small w3-hide-medium ">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>HOME</p>
+            </a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-user w3-xxlarge "></i>
+                <p>ABOUT</p>
+            </a>
+            <a href="Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red  w3-theme-d5 ">
+                <i class="fa fa-calendar w3-xxlarge"></i>
+                <p>EVENTS</p>
+            </a>
+            <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p>CONTACTS</p>
+            </a>
+        </nav>
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large myNavbarsmall" id="myNavbar">
+            <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+                <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">HOME</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+                <!-- 	<a href="activity.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ACTIVITY</a> -->
+                <a href="Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+                <a href="contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+            <!-- Header -->
+            <div class="w3-hide-large w3-hide-medium space">
+            </div>
+            <div class="w3-display-container w3-center w3-white" id="home">
+                <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+                <p>Anna university, Chennai-600025</p>
+                <img src="images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+                <img src="images/YRC.jpg"  class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+                <hr>
+            </div>
+            <!-- Time -->
+            <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                <p><b><span class="w3-text-red "></span></b></p>
+            </div>
+            <!--open screen-->
+            <div class="">
+                <div class="w3-container w3-center">
+                    <h2>Events By YRC (CEG CAMPUS)</h2>
+                    <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <a href="Events/sukaraksha.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive"  src="Events/images/logos/Uyirthuli.jpg" alt="Sukaraksha logo" >
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading"> UYIRTHULI&nbsp;<small>(Blood Donation Camp)</small></h4>
+                                <p class="list-group-item-text"><br> 
+                                    Uyirthuli is a blood donation camp conducted by Youth Red Cross - CEG every year.  20 minutes of our time and 250 cc of our blood make the huge difference between life and death. The main reason behind this event is to develop the willingness to donate blood among students.
+                                </p>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/whitecaneday.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="Events/images/logos/white_cane.jpg" alt="White Cane Day Logo">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">WHITE CANE DAY</h4>
+                                <p class="list-group-item-text"><br>
+                                    <i>"Kindness is a language that deaf people can hear and blind people can see"</i><br>
+                                    White cane day is a national observance day for the safety of blind people. In YRC we will throw light on them by collecting funds, celebrating it in blind schools or orphanages, conducting activities for them and presenting them some useful gifts.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/praknai.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="Events/images/logos/praknai.jpg" alt="placehold.it/350x250">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">PRAKNAI&nbsp;<small>(Health Awareness Camp)</small></h4>
+                                <p class="list-group-item-text"><br>
+                                    Praknai is a health awareness camp conducted by Youth Red Cross - CEG every year. Various health related competitions are also conducted for the students. The main reason behind this event is to stress the importance of healthy life among the students.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/vivega.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="Events/images/logos/vivega.jpg" alt="placehold.it/350x250" width=350 height=250>
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading"> VIVEGA </h4>
+                                <p class="list-group-item-text"><br> 
+                                    <i>"Spread smile everywhere"</i><br>
+                                    A one day thematic event organized by the YRC Volunteersof CEG Campus, Anna University to commemorate Swami Vivekananda. The main objective of this event to bring out the inherent talents and interests of
+                                    children from various Orphanage / Homes in and around Chennai.                    
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/roadsafety.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="Events/images/logos/road.jpg" alt="placehold.it/350x250" width=350 height=250>
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">ROAD SAFETY PROGRAMME</h4>
+                                <p class="list-group-item-text"><br>
+                                    <i>"Alert today – Alive tomorrow"</i><br>
+                                    Road safety week observance is followed by Youth Red Cross - CEG every year to create awareness among the people about road safety rules and regulations. Students will go rally insisting about road safety and many activities will be conducted for the students to inculcate road safety rules among them.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/alumnimeet.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="Events/images/logos/alumni.jpg" alt="placehold.it/350x250">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">NINAIVUGAL&nbsp;<small>(Alumni Meet)</small></h4>
+                                <p class="list-group-item-text"><br>
+                                    <i>"Take only memories and leave foot prints"</i><br>
+                                    Alumini meet is conducted each and every year to rewrite our bond with our seniors who lead and guide us towards the right path.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/campactivities.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="Events/images/logos/camp.jpg" alt="placehold.it/350x250">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">7 DAY SPECIAL CAMP</h4>
+                                <p class="list-group-item-text"><br>
+                                    7 day special camp is conducted by Youth Red Cross CEG each and every year in a village for good exposure and for inculcating basic life experiences among the students under the banner health, service and friendship. Students will do activities for the upliftment of the village people.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/inaug.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="images/inaug.jpeg" alt="placehold.it/350x250">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">AGARAM</h4>
+                                <p class="list-group-item-text"><br>
+                                    Agaram is conducted in the month of october, every year to introduce YRC's activities, roles and responsibilities to the first year students.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Events/thulirthiran.html" class="list-group-item">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-rounded img-responsive" src="images/Thulir_Thiran.png" alt="placehold.it/350x250" style="width: 100%; height: 100%;">
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="list-group-item-heading">THULIR THIRAN</h4>
+                                <p class="list-group-item-text"><br>
+                                    Thulir Thiran a bedazzling event that aims at providing knowledge, throwing spotlight on innate talents and highlights the glory in service and your role as a YRC Volunteer.
+                                </p>
+                            </div>
+                        </a>
+                        
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

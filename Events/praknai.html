@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<title>YOUTH RED CROSS</title>
+<link href="../../images/YRC.jpg" rel="icon" type="image/x-icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../w3-theme-red.css">
+<link rel="stylesheet" href="../../Montserrat.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #ff4d4d;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+footer
+{
+margin-left: 120px
+}
+li
+{
+ color: black;
+}
+h4
+{
+font-weight: bold;
+}
+.space
+{
+margin-top: 40px
+}
+.just
+{
+  text-align: justify;
+  text-justify:inter-word;
+}
+
+</style>
+<body onload="start()">
+
+<!-- Navbar(Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small">
+  <a href="../../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="../../about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-user w3-xxlarge "></i>
+    <p>ABOUT</p>
+  </a>
+<!--   <a href="../../activity.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>ACTIVITY</p>
+  </a> -->
+  <a href="../../Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red  w3-theme-d5 ">
+    <i class="fa fa-calendar w3-xxlarge"></i>
+    <p>EVENTS</p>
+  </a>
+  <a href="../../contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTS</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">HOME</a>
+    <a href="../../about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+<!--   <a href="../../activity.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">ACTIVITY</a> -->
+    <a href="../../Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+    <a href="../../contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+ <!-- Header -->
+ <div class="w3-hide-large w3-hide-medium space">
+ </div>
+<div class="w3-display-container w3-center w3-white" id="home">
+    <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+    <p>Anna university, Chennai-600025</p>
+ <img src="../../images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+  <img src="../../images/YRC.jpg"  class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+   <hr>
+  </div>
+  
+ <div class="container">
+ <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+  <li class="nav-item">
+    <a class="nav-link active" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true">2018</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2017</a>
+  </li>
+ 
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+<!-- Time -->
+<div class="w3-container w3-center"><br><br>
+  <h2>Praknai'18</h2>
+  <h6>(Health Awareness Camp)</h6>
+  <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+</div>
+
+<div class="w3-display-topright w3-small w3-hide-small" id="txt">
+  <p><b><span class="w3-text-red "></span></b></p>
+</div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify" id="about">
+    <h2></h2>
+   <div> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 just"><br><br>
+
+          March 10-16 is observed as Patient Safety awareness week. The Youth Red Cross volunteers of CEG observed the awareness week by conducting a health camp, Praknai. Pulavar R.Manikkam,District Secretary of Indian Red Cross Society, Kancheepuram gave a demonstration on first aid. The students learned enthusiastically the first aid practices to be done in different situations and conditions. Then, Dr.A.Kishorekumar, MD IHBT from the department of Transfusion Medicine, Dr.MGR Medical University gave a session on the merits on blood donation. He also clarified the doubts of the students and encouraged them to donate blood. 
+
+        </div>
+    
+ 		</div>
+
+      </div>
+    </div>
+  </div>
+  
+<!-- END PAGE CONTENT -->
+</div>
+ 
+<!-- Time -->
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<div class="w3-container w3-center"><br><br>
+  <h2>Praknai'17</h2>
+  <h6>(Health Awareness Camp)</h6>
+  <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+</div>
+
+<div class="w3-display-topright w3-small w3-hide-small" id="txt">
+  <p><b><span class="w3-text-red "></span></b></p>
+</div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify" id="about">
+    <h2></h2>
+   <div> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 just"><br><br>
+          Praknai is a health awareness event which was conducted for the first time on 18<sup>th</sup> December 2017 by the Youth Red Cross, CEG. A dental camp was organised in the Alumni Center, CEG. More than 150 people participated in the dental camp. Various events were also conducted to create awareness on the importance of health. Prizes were also distributed to the winners of the events.  
+        </div>
+        <div class="col-md-6">
+           <img class="mySlides" src="images/praknai/praknai1.jpg" style="width:100%">
+           <img class="mySlides" src="images/praknai/praknai2.jpg" style="width:100%">
+           <img class="mySlides" src="images/praknai/praknai3.jpg" style="width:100%">
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- END PAGE CONTENT -->
+</div>
+ 
+ <script type="text/javascript">
+var d=new Date();
+var weekday=new Array(12);
+weekday[0]="Jan";
+weekday[1]="Feb";
+weekday[2]="Mar";
+weekday[3]="Apr";
+weekday[4]="May";
+weekday[5]="Jun";
+weekday[6]="Jul";
+weekday[7]="Aug";
+weekday[8]="Sep";
+weekday[9]="Oct";
+var myIndexd=0;
+weekday[10]="Nov";
+weekday[11]="Dec";
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndexd++;
+    if (myIndexd > x.length) {myIndexd = 1}    
+    x[myIndexd-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+function start()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=d.getDate() +" "+ weekday[d.getMonth()] + " "+ d.getUTCFullYear()+", "+h+":"+m+":"+s;
+t=setTimeout('start()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+
+</body>
+</html>

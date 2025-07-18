@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<title>YOUTH RED CROSS</title>
+<link href="../../images/YRC.jpg" rel="icon" type="image/x-icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="../../w3-theme-red.css">
+<link rel="stylesheet" href="../../Montserrat.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #ff4d4d;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    footer {
+        margin-left: 120px
+    }
+
+    li {
+        color: black;
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+
+    .space {
+        margin-top: 40px
+    }
+
+    .tab-content {
+        margin-left: 0px;
+    }
+
+    .tab-pane {
+        margin-left: 0px;
+    }
+
+    .w3-content {
+        margin-left: 0px;
+    }
+
+    .just {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+
+<body onload="start()">
+
+    <!-- Navbar(Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small">
+        <a href="../../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="../../about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-user w3-xxlarge "></i>
+            <p>ABOUT</p>
+        </a>
+    <!--   
+        <a href="../../activity.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-briefcase w3-xxlarge"></i>
+            <p>ACTIVITY</p>
+        </a>
+    --> 
+        <a href="../../Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red  w3-theme-d5 ">
+            <i class="fa fa-calendar w3-xxlarge"></i>
+            <p>EVENTS</p>
+        </a>
+        <a href="../../contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACTS</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+            <a href="../../index.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">HOME</a>
+            <a href="../../about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+            <!--   <a href="../../activity.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">ACTIVITY</a> -->
+            <a href="../../Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+            <a href="../../contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+
+        <!-- Header -->
+        <div class="w3-hide-large w3-hide-medium space">
+        </div>
+        <div class="w3-display-container w3-center w3-white" id="home">
+            <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+            <p>Anna university, Chennai-600025</p>
+            <img src="../../images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+            <img src="../../images/YRC.jpg" class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+            <hr>
+        </div>
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true" style="color: grey;">2024</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile24" role="tab" aria-controls="profile" aria-selected="false" style="color: purple;">2023</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2019</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">2018</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">2017</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>7-Day Special Camp</h2>
+                        <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                    </div>
+
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                <ul>
+                                    <li>
+                                        A 7-Day YRC Special Camp took place from July 04, 2024, to July 10, 2024, at the College of Engineering-Guindy, Anna University.
+                                    </li>
+                                    <li>
+                                        The Camp featured a range of activities, including talk sessions and group discussions, aimed at enhancing the soft skills of participating students.
+                                    </li>
+                                    <li>
+                                        Interactive sessions with YRC alumni were also organized, providing students with valuable guidance and mentorship opportunities.
+                                        <u><a href="./report/campreport/YRC_Camp_Report'24.pdf" target="_blank">Report</a></u>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day4_0093.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0012.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0015.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0022.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0023.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0026.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0035.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0041.jpg" style="width:80%">
+                                <img class="mySlides24-2" src="images/camp/camp24/camp24 Day5_0048.jpg" style="width:80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile24" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="w3-container w3-center"><br>
+                      <h2>7-Day Special Camp</h2>
+                      <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                  </div>
+  
+                      <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                          <p><b><span class="w3-text-red "></span></b></p>
+                      </div>
+                      <div class="container">
+                          <br>
+                          <div class="row">
+                              <div class="col-md-7 just"><br><br>
+                                  <ul>
+                                      <li>
+                                          A 7-Day YRC Special Camp took place from January 24, 2024, to January 30, 2024, at the College of Engineering-Guindy, Anna University.
+                                      </li>
+                                      <li>
+                                          The camp featured a range of activities, including talk sessions and group discussions, aimed at enhancing the soft skills of participating students.
+                                      </li>
+                                      <li>
+                                          Interactive sessions with YRC alumni were also organized, providing students with valuable guidance and mentorship opportunities.
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="col-md-5">
+                                  <img class="mySlides24-1" src="images/camp/camp23/camp3.jpg" style="width:90%">
+                                  <img class="mySlides24-1" src="images/camp/camp23/camp4.jpg" style="width:80%">
+                                  <img class="mySlides24-1" src="images/camp/camp23/camp5.jpg" style="width:80%">
+                              </div>
+                          </div>
+                      </div>
+                  </div>               
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>7-Day Special Camp</h2>
+                        <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                    </div>
+
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+
+                    <!-- About Section -->
+                    <div class="w3-contentw3-content w3-justify w3-text-grey" id="about">
+                    </div>
+                    <div class="container">
+                        <br>
+                        <center>
+                            <p>
+                                <font size="5">UNIT-2 and 3</font>
+                            </p>
+                        </center>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                A 7-Day YRC Special Camp was conducted on the theme "Tell us what you love about Red Cross" from 15.06.2019 to 21.06.2019 at Karunguzhi Town Panchayat near Maduranthagam in the Kancheepuram District. Various activities were conducted as per the <u><a href="./schedules/Schedule-2019-1.pdf" target="_blank">schedule</a></u> shown in order to create awareness on literacy and health care to the school students and residents of the village.
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides19-1" src="images/camp/camp19/camp1911.jpg" style="width:80%">
+                                <img class="mySlides19-1" src="images/camp/camp19/camp1912.jpg" style="width:80%">
+                                <img class="mySlides19-1" src="images/camp/camp19/camp1913.jpg" style="width:80%">
+                                <img class="mySlides19-1" src="images/camp/camp19/camp1914.jpg" style="width:80%">
+                                <img class="mySlides19-1" src="images/camp/camp19/camp1915.jpg" style="width:80%">
+                            </div>
+                        </div>
+                        <br><br>
+                        <center>
+                            <p>
+                                <font size="5">UNIT-1 and 4</font>
+                            </p>
+                        </center>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                A 7-Day YRC Special Camp was conducted on the theme "Tell us what you love about Red Cross" from 17.06.2019 to 23.06.2019 at Nellikkuppam Village near Thiruporur in the Kancheepuram District. Various activities were conducted as per the <u><a href="./schedules/Schedule-2019-2.pdf" target="_blank">schedule</a></u> shown in order to create awareness on literacy and health care to the school students and residents of the village.
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides19-2" src="images/camp/camp19/camp1921.jpg" style="width:80%">
+                                <img class="mySlides19-2" src="images/camp/camp19/camp1922.jpg" style="width:80%">
+                                <img class="mySlides19-2" src="images/camp/camp19/camp1923.jpg" style="width:80%">
+                                <img class="mySlides19-2" src="images/camp/camp19/camp1924.jpg" style="width:80%">
+                                <img class="mySlides19-2" src="images/camp/camp19/camp1925.jpg" style="width:80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>7-Day Special Camp</h2>
+                        <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                    </div>
+
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+
+                    <!-- About Section -->
+                    <div class="w3-contentw3-content w3-justify w3-text-grey" id="about">
+                    </div>
+                    <div class="container">
+                        <br>
+                        <center>
+                            <p>
+                                <font size="5">UNIT-2 and 3</font>
+                            </p>
+                        </center>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                A 7-Day YRC Special Camp was conducted on the theme "Everywhere for Everyone, Smile" from 18.06.2018 to 24.06.2018 at Sri Sairam Engineering College, Poonthandalam Village near West Tambaram in the Kancheepuram District. Various activities were conducted as per the <u><a href="./schedules/Schedule-2018-1.pdf" target="_blank">schedule</a></u> shown in order to create awareness on literacy and health care to the school students and residents of the village.
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides18-1" src="images/camp/camp18/camp1811.jpg" style="width:80%">
+                                <img class="mySlides18-1" src="images/camp/camp18/camp1812.jpg" style="width:80%">
+                                <img class="mySlides18-1" src="images/camp/camp18/camp1813.jpg" style="width:80%">
+                                <img class="mySlides18-1" src="images/camp/camp18/camp1814.jpg" style="width:80%">
+                                <img class="mySlides18-1" src="images/camp/camp18/camp1815.jpg" style="width:80%">
+
+                            </div>
+                        </div>
+                        <br><br>
+                        <center>
+                            <p>
+                                <font size="5">UNIT-1 and 4</font>
+                            </p>
+                        </center>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                A 7-Day YRC Special Camp was conducted on the theme "Everywhere for Everyone, Smile" from 20.06.2018 to 26.06.2018 at Aanoor Village near Chengalpattu in the Kancheepuram District. Various activities were conducted as per the <u><a href="./schedules/Schedule-2019-2.pdf" target="_blank">schedule</a></u> shown in order to create awareness on literacy and health care to the school students and residents of the village.
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides18-2" src="images/camp/camp18/camp1821.jpg" style="width:80%">
+                                <img class="mySlides18-2" src="images/camp/camp18/camp1822.jpg" style="width:80%">
+                                <img class="mySlides18-2" src="images/camp/camp18/camp1823.jpg" style="width:80%">
+                                <img class="mySlides18-2" src="images/camp/camp18/camp1824.jpg" style="width:80%">
+                                <img class="mySlides18-2" src="images/camp/camp18/camp1825.jpg" style="width:80%">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="w3-container w3-center"><br>
+                        <h2>7-Day Special Camp</h2>
+                        <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+                    </div>
+
+                    <div class="w3-display-topright w3-small w3-hide-small" id="txt">
+                        <p><b><span class="w3-text-red "></span></b></p>
+                    </div>
+
+                    <!-- About Section -->
+                    <div class="w3-contentw3-content w3-justify w3-text-grey" id="about">
+                    </div>
+                    <div class="container">
+                        <br>
+                        <center>
+                            <p>
+                                <font size="5">UNIT-2 and 3</font>
+                            </p>
+                        </center>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                A 7-Day YRC Special Camp was conducted on the theme "Less Known Red Cross Stories" from 17.06.2017 to 23.06.2017 at Kundrathur in the Kancheepuram District. Various activities were conducted as per the <u><a href="./schedules/Schedule-2017-1.pdf" target="_blank">schedule</a></u> shown in order to create awareness on literacy and health care to the school students and residents of the village.
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides17-1" src="images/camp/camp17/camp1711.jpg" style="width:80%">
+                                <img class="mySlides17-1" src="images/camp/camp17/camp1712.jpg" style="width:80%">
+                                <img class="mySlides17-1" src="images/camp/camp17/camp1713.jpg" style="width:80%">
+                                <img class="mySlides17-1" src="images/camp/camp17/camp1714.jpg" style="width:80%">
+                                <img class="mySlides17-1" src="images/camp/camp17/camp1715.jpg" style="width:80%">
+                                <img class="mySlides17-1" src="images/camp/camp17/camp1716.jpg" style="width:80%">
+
+                            </div>
+                        </div>
+                        <br><br>
+                        <center>
+                            <p>
+                                <font size="5">UNIT-1 and 4</font>
+                            </p>
+                        </center>
+
+                        <div class="row">
+                            <div class="col-md-7 just"><br>
+                                A 7-Day YRC Special Camp was conducted on the theme "Less Known Red Cross Stories" from 18.06.2017 to 24.06.2017 at Karunilam Village near Singaperumal Kovil in the Kancheepuram District. Various activities were conducted as per the <u><a href="./schedules/Schedule-2017-2.pdf" target="_blank">schedule</a></u> shown in order to create awareness on literacy and health care to the school students and residents of the village.
+                            </div>
+                            <div class="col-md-5">
+                                <img class="mySlides17-2" src="images/camp/camp17/camp1721.jpg" style="width:80%">
+                                <img class="mySlides17-2" src="images/camp/camp17/camp1722.jpg" style="width:80%">
+                                <img class="mySlides17-2" src="images/camp/camp17/camp1723.jpg" style="width:80%">
+                                <img class="mySlides17-2" src="images/camp/camp17/camp1724.jpg" style="width:80%">
+                                <img class="mySlides17-2" src="images/camp/camp17/camp1725.jpg" style="width:80%">
+                                <img class="mySlides17-2" src="images/camp/camp17/camp1726.jpg" style="width:80%">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <br>
+            <!-- Time -->
+            <script type="text/javascript">
+                var d = new Date();
+                var weekday = new Array(12);
+                weekday[0] = "Jan";
+                weekday[1] = "Feb";
+                weekday[2] = "Mar";
+                weekday[3] = "Apr";
+                weekday[4] = "May";
+                weekday[5] = "Jun";
+                weekday[6] = "Jul";
+                weekday[7] = "Aug";
+                weekday[8] = "Sep";
+                weekday[9] = "Oct";
+                weekday[10] = "Nov";
+                weekday[11] = "Dec";
+
+                // Store indexes for each carousel class
+                const carouselIndexes = {};
+
+                function startCarousel(className) {
+                    const slides = document.getElementsByClassName(className);
+
+                    if (!carouselIndexes[className]) {
+                        carouselIndexes[className] = 0; // Initialize if not present
+                    }
+
+                    // Hide all slides of the class
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    // Advance index
+                    carouselIndexes[className]++;
+                    if (carouselIndexes[className] > slides.length) {
+                        carouselIndexes[className] = 1;
+                    }
+
+                    // Show current slide
+                    slides[carouselIndexes[className] - 1].style.display = "block";
+
+                    // Call recursively
+                    setTimeout(() => startCarousel(className), 2000);
+                }
+
+                // Start all carousels
+                startCarousel("mySlides24-1");
+                startCarousel("mySlides24-2");
+                startCarousel("mySlides19-1");
+                startCarousel("mySlides19-2");
+                startCarousel("mySlides18-1");
+                startCarousel("mySlides18-2");
+                startCarousel("mySlides17-1");
+                startCarousel("mySlides17-2");
+
+                function start() {
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
+                    // add a zero in front of numbers<10
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = d.getDate() + " " + weekday[d.getMonth()] + " " + d.getUTCFullYear() + ", " + h + ":" + m + ":" + s;
+                    t = setTimeout('start()', 500);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                }
+            </script>
+
+</body>
+
+</html>

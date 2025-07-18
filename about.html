@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html>
+<title>YOUTH RED CROSS</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/YRC.jpg" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-red.css">
+<link rel="stylesheet" href="Montserrat.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #ff4d4d;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.btn{
+    white-space:normal !important;
+    
+}
+footer
+{
+margin-left: 120px
+}
+li
+{
+ color: black;
+}
+h4
+{
+font-weight: bold;
+}
+.space
+{
+margin-top: 40px
+}
+.bluecol
+{
+  color:blue;
+  text-decoration: underline;
+}
+</style>
+<body>
+
+<!-- Navbar(Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small ">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red w3-theme-d5">
+    <i class="fa fa-user w3-xxlarge "></i>
+    <p>ABOUT</p>
+  </a>
+<!--   <a href="activity.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>ACTIVITY</p>
+  </a> -->
+  <a href="Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-calendar w3-xxlarge"></i>
+    <p>EVENTS</p>
+  </a>
+  <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTS</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">ABOUT</a>
+<!-- 	<a href="activity.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ACTIVITY</a> -->
+    <a href="Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+    <a href="contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+   <!-- Header -->
+ <div class="w3-hide-large w3-hide-medium space">
+ </div>
+<div class="w3-display-container w3-center w3-white" id="home">
+    <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+    <p>Anna university, Chennai-600025</p>
+	<img src="images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+	<img src="images/YRC.jpg"  class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+	<hr>
+  </div>
+  
+<!-- Time -->
+<div class="w3-display-topright w3-small w3-hide-small" id="txt">
+  <p><b><span class="w3-text-red "></span></b></p>
+</div>
+<div class="w3-container w3-center">
+  <h2>About YRC</h2><br>
+  <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
+</div>
+
+<!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey" id="about">
+
+  <div class="accordion" id="accordionExample">
+  <div class="card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link" type="button">
+             Formation Of Red Cross
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+           
+              <p> The famous quote said by Jean Henry Dunant "By Thy power, let there be peace, O God!" after witnessing the battle Solferino, lead to the formation of Red Cross Society. Every tree grows from a small seed likewise the Red Cross society grown like a tree in stages. Initially an International Committee of the Red Cross (ICRC) was formed to serve throughout the world to protect and assist victims of armed conflicts and strife.</p> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+           International Federation Of Red Cross and Red Crescent Societies
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+              <p> The International Federation of Red Cross and Red Crescent Societies (IFRC) is an international humanitarian organization with a unique worldwide network. It is a federation of all National Societies recognized by ICRC. IFRC commands an immense potential because it can mobilize local volunteers through National Society world over. It's mission is to improve the situation of the world’s most vulnerable people and to assist National Societies in their work to promote co-operation between them. </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+           Fundamental principles of the societies
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+              <ul class="w3-ul">
+                <li> Humanity
+                <li>Impartiality
+                <li>Neutrality
+                <li>Independence
+                <li>Voluntary Service
+                <li>Unity
+                <li>Universality
+              </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+          Indian Red Cross Society
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+              <p>The Indian Red Cross Society (IRCS) was established under the provision of section 8 of the IRCS Act XV of 1920 with its National Head Quarters in New Delhi. The core focus of IRCS is to promote Humanitarian Principles and Values, Disaster Management, Health and Care in Community and Blood Services.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+          Indian Red Cross Society, Tamil Nadu Branch
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+              <p><a href="http://indianredcrosstnb.org" target="_blank"><font color="blue">IRCS, Tamil Nadu Branch</font></a> was formed on 27th November 1920 with its State Headquarters in Egmore, Chennai. Some of the activities that are carried by Tamilnadu branch are:
+               <ul class="w3-ul">
+              <li><a href="http://indianredcrosstnb.org/activities/hivaids.html" target="_blank">AIDS/HIV Awareness</a>
+              <li><a href="http://indianredcrosstnb.org/activities/disastermgmt.html" target="_blank">Disaster Management</a>
+              <li><a href="http://indianredcrosstnb.org/activities/firstaid.html" target="_blank">First Aid</a>
+              <li><a href="http://indianredcrosstnb.org/activities/healthservice.html" target="_blank">Health Services</a>
+              <li><a href="http://indianredcrosstnb.org/activities/vtp.html" target="_blank">Vocational Training</a>
+              </ul>
+              </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <div class="card-header" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+          YRC Organisational Setup
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+              <ul class="w3-ul">
+                  <li> Principal</li>
+                  <li> Programme Officer</li>
+                  <li> Senior Teaching Faculty</li>
+                  <li> YRC Student Volunteer (Office Bearers)</li>
+              </ul>
+              </div>
+              <br>
+              <h4>University YRC Co-ordinator:</h4>
+              <p>The Vice-Chancellor of the University nominates a dynamic, devoted, energetic, enthusiastic and service-minded faculty member of the University as the University YRC Co-ordinator.</p>
+              <p>The University YRC Co-ordinator takes up the responsibility for the growth and development of YRC in the University. The University YRC Co-ordinator will sensitize, induce, encourage, guide and train the young, active, selfless, sacrifice-filled and service-minded YRC Programme Officers nominated by the respective Principals of the colleges taking the help, assistance and co-operation of the YRC District Organisers / Joint District Organisers in each district in the University.</p>
+              <h4>YRC District / Joint District Organiser:</h4>
+              <p>The YRC District Organisers / Joint District Organisers are nominated by the University YRC Co-ordinator from among the YRC Programme Officers, who have excelled in their Red Cross activities with dedication, commitment, enthusiastic involvement, sacrificing nature and service-minded.</p>
+              <p>The University YRC Co-ordinator, District Organisers / Joint District Organisers and Programme Officers of YRC form the pillars of the Red Cross Movement in the University level firmly founded on the young, active, energetic and ready to serve YRC Volunteer groups in the colleges forming the very foundation of the Red Cross Movement in the grass root level.</p>
+              <h4>ROLE OF DIFFERENT FUNCTIONARIES</h4>
+              <h4>University YRC Co-ordinator:</h4>
+              <ul class="w3-ul">
+                  <li> Liaison between the State Co-ordinator and District Organisers / Joint District Organisers.
+                  <li> Organizing training camps for District Organisers / Joint District Organisers / Programme Officers / YRC members.
+                  <li> Guiding District Organisers / Joint District Organisers / Programme Officers for proper functioning of YRC.
+                  <li> Issuance of certificates to District Organiser / Joint District Organisers /  Programmer Officers / YRC Volunteers.
+                  <li> Convening meeting of college Principals in connection with YRC activities.
+                  <li> Organizing University Level camps / competition for YRC members.
+                  <li> Submission of half yearly reports to State branch about the YRC activities in respective zones. 
+              </ul>
+              <h4>District Organisers / Joint District Organisers:</h4>
+              <p>
+              <ul class="w3-ul">
+                  <li> Starting of YRC Units in all the Colleges (Arts & Science, Engineering) and Polytechnic in the respective districts.
+                  <li> Helping / guiding Programme Officers in conducting YRC Programme in Colleges.
+                  <li> Liaison between Colleges and University / University YRC Co-ordinator / State Co-ordinator / District Branch.
+                  <li> Organizing training course for Programme Officers.
+                  <li> Organizing yearly District level camps for YRC students.
+                  <li> Organizing yearly District level seminars for Programme Officers.
+                  <li> Recommending participants for State level programme to the concerned University YRC Co-ordinator.
+                  <li> Organizing District level programmes like rally, competitions for creating awareness, sports, exhibition for YRC students.
+                  <li> Celebration of Geneva Convention Day, World Red Cross Day, World Health Day, AIDS Awareness Day etc.
+                  <li> Collection of Annual reports from the YRC Units of colleges and sending them to State branch with a copy to the University YRC Co-ordinator.
+                  <li> Preparation of Annual action plan at District level. 
+              </ul>
+              </p>
+
+
+
+              <h4>College Principal:</h4>
+              <p>The Principal of the college will function as a friend, philosopher, guide and facilitator, without whom YRC Units will not be able to function.</p>
+
+              <h4>Programme Officer:</h4>
+              <p>Formation of the Unit, monitoring its performance, helping the Office-bearers to chalk out programmes, maintenance of records / accounts, liaison with District / Joint District Organisers / University Co-ordinator, sending activity reports to State branch / University Co-ordinator.The YRC Programme Officer is expected to motivate the student youth to understand the values and philosophy of YRC. The overall functions of the YRC Programme  Officer are to help the students to plan, implement and evaluate the activities of YRC under his/her charge and give proper guidance and directions to the student volunteers.</p>
+              <h4>College YRC Unit:</h4>
+              <p>YRC Unit will be attached to the Colleges. Both male and female students can join YRC. One YRC Unit could consist of 100 Student Volunteers (50 First Year Volunteers + 50 Senior Volunteers) guided by one YRC Programme Officer who will be a faculty member (Teaching Staff). Depending upon the strength of students willing to become YRC volunteers, any number of YRC Units can be started in the colleges.
+              For effective functioning of the college YRC unit, it would be better if YRC unit has a separate room with adequate furniture. A name board for YRC unit with college name, Youth Red Cross, properly drawn (Red Cross emblem is formed from five equal red squares with one red square at the centre and the other four red squares on four sides of the centre square on a white back ground) and YRC Unit No. as shown may be prepared and put at the college main gate. YRC Unit No. will be given by YRC HQ (State branch) on submission of pro-forma and registration fee.
+              A Red Cross flag, the photo of Jean Henry Dunant, Father of Red Cross Movement and Red Cross badges for the YRC volunteers should be obtained (from the YRC HQ).
+              Red Cross apron, Red Cross Cap or arm band, will be useful for identification and protection of the YRC volunteers while they are in action. These may be prepared locally as per the design approved by the YRC HQ.
+              In any YRC function in the college level the Red Cross flag will be hoisted in the presence of VIPs, by a VIP and the assembled YRC Volunteers will sing the YRC song.
+              One of the items of the function will be the unveiling / garlanding the photo of Jean Henry Dunant.
+              </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    <div class="card">
+    <div class="card-header" id="headingSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+           Registration of YRC Unit with IRCS Tamilnadu State branch
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+             <p>
+             YRC units in colleges need to be registered with the Indian Red Cross Society, Tamilnadu branch (IRCS, TNB) by paying Annual Institution registration fee of Rs.20/- per college as per the <a href="images/GO.pdf" target="_blank"><u><font color="blue">GOVERNMENT ORDER</font></u></a>. A proforma in <a href="images/Proforma.jpg" target="_blank"><font color="blue"><u>ANNEXURE</u></font></a> is to be duly filled and submitted for registration purpose.
+             </p>
+             <h4>YRC Annual Membership Fee:</h4>
+             <p>
+             As per the G.O. No.342, Higher Education (J2) Department dated 30-11-2017 the Engineering Colleges will have to collect Rs.20/- per student from all the students every year along with the tuition fees. Out of this amount of Rs.20/- an amount of Rs.8/- is to be sent to
+             </p>
+             <ul>
+             <div class="w3-panel w3-light-grey">
+             THE GENERAL SECRETARY, Indian Red Cross Society, Tamil Nadu Branch, New # 32 (Old # 50) Red Cross (Montieth) Road, Egmore, Chennai - 600 008.
+             </div>
+             <p>
+             by drawing a Demand Draft in favour of the INDIAN RED CROSS SOCIETY, TAMILNADU BRANCH payable at CHENNAI. The balance amount of Rs.12/- will be retained by the respective Colleges for YRC activities. The enrolment form is given in the <a href="images/pro forma.pdf" target="_blank">Annexure</a>. In addition to the students subscription the colleges will have to be pay Rs.500/- per year as Annual Institution registration fee (Registration fee should not be collected from the students) as stated above.
+             </p>
+
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="card">
+    <div class="card-header" id="headingEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+         YRC Song and Pledge
+        </button>
+      </h5>
+    </div>
+    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="w3-panel w3-light-grey">
+                <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
+                <p class="w3-xlarge" style="margin-top:-40px"><i>
+              Darthi karo nirmal karo beeda prabu hey<br>
+
+            Jeevan karo vujval nava jyothi baro hey - (2)<br>
+
+            Dukki janonki seva hum kare - (2)<br>
+
+            Baththali thonko gale lagale - (2)<br>
+
+            Shanthi badha shanthi kaarya shanthi varada hey!<br>
+
+            Jeevan karo vujval nava jyothi baro hey!<br>
+
+            Nava jyothi baro hey, nava jyothi baro hey!<br>
+              </i></p>
+            <a href="images/Tamil.pdf" target="_blank"><font color=blue>YRC SONG IN TAMIL TRANS LITERATED VERSION</font></a>
+              </div>
+
+ <br>
+              <h4>YRC Programme Officer's Pledge:</h4>
+<p>As a Programme Officer of Youth Red Cross, I promise to serve, to work loyally for the promotion of health and the relief of suffering and distress, wherever I may find it and to hold in friendship youth of all Nations.</p>
+<h4>YRC Member Pledge:</h4>
+<p>I pledge myself to care my own health and that of others, to help the sick and suffering specially children and to look upon the youth all over the world as my friends.</p>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card">
+    <div class="card-header" id="headingNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+         College Level Advisory Committee for YRC
+        </button>
+      </h5>
+    </div>
+    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <p>
+            It is advised that each college shall have a college level advisory committee consisting of
+            <ul class="w3-ul">
+                <li> Principal: Chairman
+                <li> YRC Programme Officer: Vice-Chairman</font>
+                <li> One Staff member with interest in social work: Member</font>
+                <li> YRC Student Chairman: Member</font>
+                <li> YRC Student Secretary: Member </font>
+            </ul>
+            </p>
+            <p>
+            The over all function of the YRC Advisory Committee at the college level is to advise on the various activities of YRC unit based on the immediate and urgent needs of the students and the community. The Committee should meet regularly at least four times a year.
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="card">
+    <div class="card-header" id="headingTen" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+      <h5 class="mb-0"></i>
+        <button class="btn btn-link collapsed" type="button">
+         Records and Register
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+           The following list of records and registers are to be maintained by the College YRC Unit.
+
+           <ul class="w3-ul">
+              <li> Enrolment register of volunteers
+              <li> Cash register 
+              <li> Stock register (Consumable & Non-Consumable)
+              <li> Attendance register for volunteers
+              <li> Register of project reports
+              <li> Register of progress report
+              <li> Minutes book
+              <li> Visitors book
+              <li> Blood Donors directory 
+           </ul>
+
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+</p>
+  <!-- End About Section -->
+  </div>
+  
+<!-- END PAGE CONTENT -->
+</div>
+  <footer class="w3-container w3-grey w3-text-black w3-small w3-hide-small">  
+    <div class="w3-row-padding">
+      <div>
+        <h3>CONTACT</h3>
+    <hr style="width:100px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://maps.app.goo.gl/BfNSj8vyAiR3W5rb8">Location: YRC Cell, Anna University, Chennai-600025</a></p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Intercom: 8493 </p>
+     </div><br>	
+      </div>
+    </div>
+  </footer>
+  <div class="w3-container w3-grey w3-text-black w3-hide-large w3-hide-medium">  
+    <div class="w3-row-padding">
+      <div>
+        <h3>CONTACT</h3>
+    <hr style="width:100px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="https://maps.app.goo.gl/BfNSj8vyAiR3W5rb8">Location: YRC Cell, Anna University, Chennai-600025</a></p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Intercom: 8493 </p>
+     <!--  <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: yrccoordinator@annauniv.edu </p> -->
+    </div><br>	
+      </div>
+    </div>
+  </div>
+  
+ <div class="w3-grey w3-center w3-text-black">Design and Maintained by  <!--<a href="YRC_Web_Team.html" class="w3-hover-opacity">-->YRC Web Team</a></div>
+
+ 
+ <script type="text/javascript">
+//Time
+var d=new Date();
+var weekday=new Array(12);
+weekday[0]="Jan";
+weekday[1]="Feb";
+weekday[2]="Mar";
+weekday[3]="Apr";
+weekday[4]="May";
+weekday[5]="Jun";
+weekday[6]="Jul";
+weekday[7]="Aug";
+weekday[8]="Sep";
+weekday[9]="Oct";
+weekday[10]="Nov";
+weekday[11]="Dec";
+
+function start()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=d.getDate() +" "+ weekday[d.getMonth()] + " "+ d.getUTCFullYear()+", "+h+":"+m+":"+s;
+t=setTimeout('start()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+
+
+</script>
+
+</body>
+</html>

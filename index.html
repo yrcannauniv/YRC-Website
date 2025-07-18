@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html>
+<title>YOUTH RED CROSS</title>
+<link href="images/YRC.jpg" rel="icon" type="image/x-icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-red.css">
+<link rel="stylesheet" href="Montserrat.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #ff4d4d;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {
+  #main {
+  margin-left: 0;
+}
+.container {
+  display: block !important;
+}
+.carousel, .content {
+  width: 100% !important;
+}
+}
+footer
+{
+margin-left: 120px
+}
+li
+{
+ color: black;
+}
+h4
+{
+font-weight: bold;
+}
+.space
+{
+margin-top: 40px
+}
+.container {
+    display: flex;
+}
+.carousel {
+    width: 50%; 
+    overflow: hidden;
+    position: relative;
+}
+.content {
+    width: 50%;
+}
+.content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+<body>
+
+<!-- Navbar(Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-center w3-small w3-hide-small ">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d5 w3-hover-pale-red">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-user w3-xxlarge "></i>
+    <p>ABOUT</p>
+  </a>
+<!--   <a href="activity.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>ACTIVITY</p>
+  </a> -->
+  <a href="Events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red ">
+    <i class="fa fa-calendar w3-xxlarge"></i>
+    <p>EVENTS</p>
+  </a>
+  <a href="contacts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTS</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-hover-opacity-off w3-center w3-small w3-theme-d4">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-pale-red w3-theme-d5" style="width:20% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ABOUT</a>
+<!-- 	<a href="activity.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">ACTIVITY</a> -->
+    <a href="Events.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">EVENTS</a>
+    <a href="contacts.html" class="w3-bar-item w3-button w3-hover-pale-red" style="width:20% !important">CONTACTS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+  <!-- Header -->
+ <div class="w3-hide-large w3-hide-medium space">
+ </div>
+<div class="w3-display-container w3-center w3-white" id="home">
+    <h1 class="w3-jumbo w3-text-red " height="10%" width="30%">YOUTH RED CROSS</h1>
+    <p>Anna university, Chennai-600025</p>
+	<img src="images/Anna_University.png" class="w3-hover-opacity w3-display-left w3-image " height="10%" width="10%">
+	<img src="images/YRC.jpg"  class="w3-hover-opacity w3-display-right w3-image " height="10%" width="10%">
+	<hr>
+  </div>
+  
+<!-- Time -->
+<div class="w3-display-topright w3-small w3-hide-small" id="txt">
+  <p><b><span class="w3-text-red "></span></b></p>
+</div>
+<p>
+Youth Red Cross has the following three principles:
+<ul class="w3-ul"><i>
+<li>&emsp;&emsp;<i class="fa fa-caret-right"></i>&emsp;Protection of Health & Life</li>
+<li>&emsp;&emsp;<i class="fa fa-caret-right"></i>&emsp;Service to the Sick & Suffering</li>
+<li>&emsp;&emsp;<i class="fa fa-caret-right"></i>&emsp;Promotion of National & International Friendship, to develop the mental and moral capacities of the youth</li></i>
+</ul>
+</p>
+
+
+<div class="container">
+  <div class="carousel">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/Home/award/Governor.jpg" style="width:100%">  
+      </div>
+<!--      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/Home/award/VC2.jpg" style="width:100%"> 
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">3/3</div>
+         <img src="images/Home/award/Registrar.jpg" style="width:100%">
+      </div>
+-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+<div class="content">
+   <p>
+    <ul>
+    <li>The Red Cross Society is a worldwide, well known, universally accepted, admired and internationally identified humanitarian service organisation.</li> <br>
+    <li>It is the biggest, independent non-religious, non-political, non-sectarian and voluntary relief organisation treating people equally all over the world 
+    without any discrimination as to their nationality race and religious beliefs. It was established in 1863 in Geneva, Switzerland.</li> <br>
+    <li> The Father of Red Cross movement and recipient of noble award for peace in 1901 was “Jean Henry Dunant”.
+    </li><br>
+    <li>Prof.Dr.S.Thanigaiarasu, YRC Coordinator, Anna University recieved the award of appreciation from the Hon'ble Governor of Tamilnadu Thiru.Banwarilal Purohit on 27.09.2019 for having organized highest Blood Donation Camps</li>
+  </ul>
+</div>
+</div>
+
+  
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+  .blood-container {
+      margin-top: 50px;
+      position: relative;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      /* Adjusted for responsiveness */
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .panel {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      color: black;
+  }
+
+  .icon-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* Ensures responsiveness */
+      justify-content: space-between;
+  }
+
+  .icon-wrapper {
+      text-align: center;
+      flex: 1;
+      min-width: 200px;
+      /* Responsive minimum width */
+      margin: 10px;
+  }
+
+  .icon {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: bounce 1.5s infinite;
+      /* Added animation */
+  }
+
+  @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+          transform: translateY(0);
+      }
+
+      40% {
+          transform: translateY(-30px);
+      }
+
+      60% {
+          transform: translateY(-15px);
+      }
+  }
+
+  .count-text {
+      font-size: 32px;
+      /* Increased font size */
+      font-weight: 700;
+      /* Bold text */
+      color: #ff5722;
+      /* Stylish text color */
+  }
+
+  .icon-title {
+      font-size: 20px;
+      margin: 5px 0;
+      font-weight: 600;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .button {
+          font-size: 16px;
+          padding: 12px 24px;
+      }
+
+      .icon {
+          width: 80px;
+          height: 80px;
+      }
+
+      .count-text {
+          font-size: 28px;
+      }
+
+      .icon-title {
+          font-size: 18px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .container {
+          padding: 10px;
+          margin-top: 20px;
+      }
+
+      .button {
+          font-size: 14px;
+          padding: 10px 20px;
+      }
+
+      .icon {
+          width: 60px;
+          height: 60px;
+      }
+
+      .count-text {
+          font-size: 24px;
+      }
+
+      .icon-title {
+          font-size: 16px;
+      }
+  }
+</style>
+
+<script>
+  async function fetchStatistics() {
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzAY2jbfakqRm8BkKH4c3c7J6fM7gr3cW0ApWEd_uSbhYlH-bky44UAlwChu0LIYMiO/exec';
+          try {
+              const response = await fetch(scriptURL);
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const data = await response.json();
+              console.log('Fetched data:', data);
+              if (data.error) { document.getElementById('requests-count').innerText = 'Error: ' + data.error; document.getElementById('fulfilled-count').innerText = 'Error: ' + data.error; document.getElementById('donated-count').innerText = 'Error: ' + data.error; } else { document.getElementById('requests-count').innerText = data.requests; document.getElementById('fulfilled-count').innerText = data.fulfilled; document.getElementById('donated-count').innerText = data.donated; } } catch (error) { console.error('Error fetching data:', error); document.getElementById('requests-count').innerText = 'Error fetchinag data.'; document.getElementById('fulfilled-count').innerText = 'Error fetching data.'; document.getElementById('donated-count').innerText = 'Error fetching data.'; } } fetchStatistics(); 
+</script>
+
+ 
+  <div class="w3-content w3-justify w3-text-grey" id="about">
+    <h2><b>Days of Yore</b></h2>
+    <hr style="width:200px" class="w3-opacity">
+<P>The two proposals are:
+<ul class="w3-ul">
+  <li> Formation of trained medical relief team in every country in peace time to be employed in the relief work for wounded soldiers in the battle field.</li>
+  <li>Framing of rules to alleviate the suffering of war victims and to have international treaty among the nations. Once agreed upon and satisfied this might assure humane care for wounded.</li>
+</ul>
+</P>
+
+ <div class="w3-third w3-center w3-padding">
+  <div class="w3-display-container" style="min-height:460px">
+  <img src="images/JEAN HENRY DUNANT.jpg" height="100%" width="100%">
+  <b>JEAN HENRY DUNANT</b>
+  <p>(Father Of Red Cross)</p>
+  <p>8th May 1828 - 30th Oct 1910</p>
+  </div>
+  </div>
+  <p>
+  Based on the proposals a resolution for the formation of medical relief societies “ Society for  the relief of wounded combatants” 
+was passed and the Red Cross Emblem to protect the members of Relief team was adopted. The name 
+was changed subsequently in the year 1867 as “Red Cross Society” by Netherland. 
+In 1875 the five member commission of the Geneva Society for Public Welfare 
+began to call itself the International Committee of Red Cross (ICRC). 
+In 1876 Muslim countries adopted Red Crescent on white background instead of Red Cross. 
+The Red Cross Societies in times of peace pursue a variety of activities devoted to the health, 
+safety and well being of the people, with the best relationship, understanding and 
+cooperation between many governments and their national societies.
+
+  </p>
+
+  <p>
+  The involvement and contribution of young people to the work of the Red Cross has an interesting 
+history. This genesis of their engagement originated in the province of Quebec, Canada in 1914,
+ when school children first participated in the humanitarian work of the Red Cross work by making 
+bandages, dressings and other comforts for soldiers. The idea soon spread to Europe, United States,
+ Australia, Italy, Bulgaria, Czechoslovakia, Hungary, New Zealand, Poland, Switzerland, 
+United Kingdom and Yugoslavia France, Japan, Romania and Sweden in short duration .
+  </p>
+  <p>
+ In 1922, the youth programme of the Red Cross was officially recognized and supported by 
+Resolution No. XVIII adopted by the General Council of League of Red Cross Societies and
+  expansion of the Red Cross youth programmes to young people outside the schools or other than 
+those attending educational institution were embodied in one of the General Councils resolutions
+ XIX.
+</p>
+<p>The Red Cross through its junior and youth programmes, plays an important role in channelling and guiding the young energy in the cause of humanitarian action. The following are some glimpses of Youth Red Cross.</p>
+<p>The main purpose of organizing the Youth Red Cross is:
+<ul class="w3-ul">
+ <li>Informing youth members and others the roles and responsibilities of the Red Cross and encourage them to contribute.</li>
+ <li>An awareness on the care of their own health and that of others.</li>
+ <li>Understanding and acceptance of civic responsibilities and acting accordingly with humanitarian concern, to fulfill the same.</li>
+ <li>To enable the growth and development of, spirit of service and sense of duty with dedication and devotion in the minds of youth.</li>
+ <li>To foster better friendly relationship with all, without any discrimination.<li>
+</ul>
+</p>
+
+
+
+<p>Based on the etymological information of Youth Red Cross, in Anna University it was established in the academic year 2002-03 as per order of the Government of Tamil Nadu. From the time of inception, it started growing like a banyan tree in various avenues such as
+<ul class="w3-ul">
+<li>Organizing blood donation camps.</li>
+<li>Rendering help and assistance to the needy and meritorious physically challenged people.</li>
+<li>Organizing 7-Day special camp for YRC Volunteers in rural villages in and around Chennai during summer vacation. </li>
+<li>Organizing a talent hunt programme among orphanage students and visually challenged people.</li>
+</ul>
+</p>  
+    </div> 
+
+</div>
+ <footer class="w3-container w3-grey w3-text-black w3-small w3-hide-small">  
+    <div class="w3-row-padding">
+      <div>
+        <h3>CONTACT</h3>
+    <hr style="width:100px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Location: YRC Cell, Anna University, Chennai-600025</p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Intercom: 8493 </p>
+       </div><br>	
+      </div>
+    </div>
+  </footer>
+  <div class="w3-container w3-grey w3-text-white w3-hide-large w3-hide-medium">  
+    <div class="w3-row-padding">
+      <div>
+        <h3>CONTACT</h3>
+    <hr style="width:100px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Location: YRC Cell, Anna University, Chennai-600025</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Intercom: 8493 </p>
+     <!--  <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: yrccoordinator@annauniv.edu </p> -->
+    </div><br>	
+      </div>
+    </div>
+  </div>
+  
+ <div class="w3-grey w3-center w3-text-black">Design and Maintained by  <!--<a href="YRC_Web_Team.html" class="w3-hover-opacity">-->YRC Web Team</a></div>
+
+ 
+<script type="text/javascript">
+var d=new Date();
+var weekday=new Array(12);
+weekday[0]="Jan";
+weekday[1]="Feb";
+weekday[2]="Mar";
+weekday[3]="Apr";
+weekday[4]="May";
+weekday[5]="Jun";
+weekday[6]="Jul";
+weekday[7]="Aug";
+weekday[8]="Sep";
+weekday[9]="Oct";
+weekday[10]="Nov";
+weekday[11]="Dec";
+
+function start()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=d.getDate() +" "+ weekday[d.getMonth()] + " "+ d.getUTCFullYear()+", "+h+":"+m+":"+s;
+t=setTimeout('start()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+
+</body>
+</html>
