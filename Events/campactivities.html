@@ -79,6 +79,15 @@
         text-align: justify;
         text-justify: inter-word;
     }
+    /*only for camp 2025 (blinking red & green) */  
+    @keyframes blinkColor2025 {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: red; }
+    }
+    .blink2025 {
+    animation: blinkColor2025 1s infinite;
+    }
 </style>
 
 <body onload="start()">
@@ -135,8 +144,13 @@
         </div>
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item active">
+                <a class="nav-link active blink2025" id="tab2025" data-toggle="tab" href="#camp2025" role="tab" aria-controls="camp2025" aria-selected="true">
+                    2025
+                </a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link active" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true" style="color: grey;">2024</a>
+                    <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true" style="color: grey;">2024</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile24" role="tab" aria-controls="profile" aria-selected="false" style="color: purple;">2023</a>
@@ -152,8 +166,45 @@
                 </li>
             </ul>
 
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="camp2025" role="tabpanel" aria-labelledby="tab2025">
+                        <div class="w3-container w3-center"><br>
+                            <div class="camp-content" id="camp2025" style="display: none;"></div>
+                            <h2>7-Day Special Camp</h2>
+                            <h6 class="w3-hide-large w3-hide-medium">(For more details view the site in Desktop)</h6>
+                        </div>
+                        <div class="camp-content" id="camp2025">
+                        <div class="container">
+                            <br>
+                        <div class="row">
+                            <div class="col-md-7 just"><br><br>
+                                <p style="text-align: justify;">
+                                        
+                                        A 7-Day YRC Special Camp was conducted on the theme <b>“Keeping Humanity Alive”</b> from <b>30.06.2025 to 06.07.2025</b> at <b>Somangalam Village</b> in the Kancheepuram District. Various activities were conducted as per the 
+                                        <u><a href="./schedules/Schedule-2025.pdf" target="_blank">schedule</a></u> shown in order to create awareness on education, healthcare, and personal development among school students and residents of the village.
+                                        <u><a href="./report/campreport/YRC_Camp_2025_7days_Report.pdf" target="_blank">Report</a></u>
+                                    </p>
+                             </div>
+                        
+                            <div class="col-md-5">
+                                <!-- 2025 Camp Slideshow -->
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day2_1.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day2_2.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day2_3.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day3_1.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day3_2.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day4_2.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day5_1.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day5_2.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day5_3.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day5_5.jpg" style="width:80%">
+                                <img class="mySlides25-1" src="images/camp/camp25/Camp25 Day6_1.jpg" style="width:80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="tab-pane fade " id="latest" role="tabpanel" aria-labelledby="latest-tab">
                     <div class="w3-container w3-center"><br>
                         <h2>7-Day Special Camp</h2>
                         <h6 class="w3-hide-large w3-hide-medium ">(For more details view the site in Desktop)</h6>
@@ -445,6 +496,7 @@
                 }
 
                 // Start all carousels
+                startCarousel("mySlides25-1");
                 startCarousel("mySlides24-1");
                 startCarousel("mySlides24-2");
                 startCarousel("mySlides19-1");
