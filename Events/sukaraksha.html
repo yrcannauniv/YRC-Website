@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -32,6 +32,10 @@
         .w3-sidebar {
             width: 120px;
             background: #ff4d4d;
+        }
+
+        .mySlides5 {
+            display: none;
         }
 
         #main {
@@ -128,7 +132,10 @@
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="year25-tab" data-toggle="tab" href="#latest_25" role="tab" aria-controls="latest_25" aria-selected="true">2025</a>
+                    <a class="nav-link active " id="year26-tab" data-toggle="tab" href="#latest_26" role="tab" aria-controls="latest_26" aria-selected="true">2026</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="year25-tab" data-toggle="tab" href="#latest_25" role="tab" aria-controls="latest_25" aria-selected="false">2025</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="false">2019</a>
@@ -146,8 +153,70 @@
 
             <!-- Tab panes -->
             <div class="tab-content" id="myTabContent">
+                <!-- UYIRTHULI "26 content"-->
+                <div class="tab-pane fade show active" id="latest_26" role="tabpanel" aria-labelledby="year26-tab">
+
+                    <div class="w3-container w3-center"><br>
+                        <h2>Uyirthuli'26</h2>
+                        <h6>(Blood Donation Camp)</h6>
+                        <h6 class="w3-hide-large w3-hide-medium">
+                            (For more details view the site in Desktop)
+                        </h6>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-6 just"><br>
+
+                                <font size="3.5" face="Montserrat">
+
+                                    <span class="quotes">
+                                        <center><b>"Donate Blood, Save Lives"</b></center>
+                                    </span><br>
+
+                                    <b><i>Date :</i></b> 25.03.2026 <br><br>
+
+                                    <b><i>Venue :</i></b> CEG Square (1st floor non-veg canteen)<br><br>
+
+                                    <b><i>Beneficiary :</i></b> Indian Red Cross Society Blood Bank<br><br>
+
+                                    <b><i>No. of Units :</i></b> 102 Units<br><br>
+
+                                    The Uyirthuli Blood Donation Camp 2026 was successfully organized by the Youth Red Cross (YRC) of the College of Engineering, Guindy (CEG) in association with the Indian Red Cross Society (IRCS). The camp was conducted on 25th March 2026, from 10:00 AM to 4:30 PM, at CEG, with the objective of promoting voluntary blood donation and creating awareness about its importance.
+
+Students from various departments actively participated in the camp and enthusiastically came forward to donate blood. The registration, medical screening, and donation processes were carried out systematically under the supervision of trained medical professionals, with proper arrangements for safety and hygiene.
+                                </font>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <img class="mySlides5" src="images/uyirthuli/26/1.JPG" style="width:100%" loading="eager" decoding="async">
+                                <img class="mySlides5" src="images/uyirthuli/26/2.JPG" style="width:100%" loading="eager" decoding="async">
+                                <img class="mySlides5" src="images/uyirthuli/26/3.JPG" style="width:100%" loading="eager" decoding="async">
+                                <img class="mySlides5" src="images/uyirthuli/26/4.JPG" style="width:100%" loading="eager" decoding="async">
+                                <img class="mySlides5" src="images/uyirthuli/26/5.JPG" style="width:100%" loading="eager" decoding="async">
+                                
+                            </div>
+
+                            <div class="col-md-12"><br>
+
+                                <font size="3.5" face="Montserrat">
+
+                                    The event was conducted under the guidance of YRC Coordinator Mr. Vimalanthan and Program Officer Mr. Narashiman. The dedicated efforts of the YRC volunteers and medical team contributed to the smooth and successful conduct of the camp. Overall, the Uyirthuli Blood Donation Camp 2026 was a great success, reflecting the spirit of humanity, service, and social responsibility among the students of CEG.
+
+                                </font>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
                 <!-- UYIRTHULI "25 content"-->
-                <div class="tab-pane fade show active" id="latest_25" role="tabpanel" aria-labelledby="year25-tab">
+                <div class="tab-pane fade " id="latest_25" role="tabpanel" aria-labelledby="year25-tab">
                     <div class="w3-container w3-center"><br>
                         <h2>Uyirthuli'25</h2>
                         <h6>(Blood Donation Camp)</h6>
@@ -355,6 +424,7 @@
             var myIndexe = 0;
             var myIndexf = 0;
             var myIndexg = 0;
+            var myIndexh = 0;
             weekday[10] = "Nov";
             weekday[11] = "Dec";
 
@@ -363,6 +433,7 @@
             carousel2();
             carousel3();
             carousel4();
+            carousel5();
 
             function carousel() {
                 var i;
@@ -432,6 +503,20 @@
                 }
                 x[myIndexg - 1].style.display = "block";
                 setTimeout(carousel4, 2000);
+            }
+
+            function carousel5() {
+                var i;
+                var x = document.getElementsByClassName("mySlides5");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndexh++;
+                if (myIndexh > x.length) {
+                    myIndexh = 1;
+                }
+                x[myIndexh - 1].style.display = "block";
+                setTimeout(carousel5, 2000);
             }
 
             function start() {
