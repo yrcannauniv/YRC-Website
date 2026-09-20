@@ -153,6 +153,17 @@
             cursor: pointer;
         }
 
+        /* Blinking for 2027 */
+        @keyframes blinkColor2027 {
+            0% { color: red; }
+            50% { color: green; }
+            100% { color: red; }
+        }
+
+        .blink2027 {
+            animation: blinkColor2027 1s infinite;
+        }
+
         /* Blinking for 2026 */
         @keyframes blinkColor2026 {
             0% { color: red; }
@@ -162,6 +173,25 @@
 
         .blink2026 {
             animation: blinkColor2026 1s infinite;
+        }
+
+        .yr-btn {
+            font-size: 13px;
+            padding: 6px 10px;
+            white-space: nowrap;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            margin: 3px;
+        }
+
+        .ob-header-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
         }
 
     </style>
@@ -364,17 +394,164 @@
 
                     <hr>
 
-                    <div id="oblist26" class="visible">
+                    <div id="oblist27" class="visible">
                         <h4 class="w3-center">
                             <span class="w3-wide">
+                                <div class="ob-header-row">
                                 OFFICE BEARERS
-                                <button onclick="showYear(26)" class="blink2026" style="transform: scale(1.3);">
-                                    2026
+                                <button onclick="showYear(27)" class="blink2027 yr-btn" style="transform: scale(1.15);">
+                                    2026-2027
                                 </button>
+                                <button onclick="showYear(26)" class="yr-btn" style="opacity: 0.5;">2025-2026</button>
+                                <button onclick="showYear(25)" class="yr-btn" style="opacity: 0.5; color: gray;">2024-2025</button>
+                                <button onclick="showYear(24)" class="yr-btn" style="opacity: 0.5; color: purple;">2023-2024</button>
+                                <button onclick="showYear(23)" class="yr-btn" style="opacity: 0.5; color: orange;">2022-2023</button>
+                            </div>
+                            </span>
+                        </h4>
 
-                                <button onclick="showYear(25)" style="opacity: 0.5; color: gray;">2025</button>
-                                <button onclick="showYear(24)" style="opacity: 0.5; color: purple;">2024</button>
-                                <button onclick="showYear(23)" style="opacity: 0.5; color: orange;">2023</button>
+                        <table border="1">
+                            <tr>
+                                <th>S.No</th>
+                                <th>NAME</th>
+                                <th>DOMAIN</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/madhan-m-9a9165434?trk=contact-info" class="link">
+                                    
+                                    MADHAN M</a>
+                                </td>
+                                <td>VICE PRESIDENT (MALE)</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/harshitha-ganesh-601658323?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link" >
+                                    
+                                    HARSHITHA G </a>
+                                </td>
+                                <td>VICE PRESIDENT (FEMALE)</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/adithya-tamil-608191332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">ADITHYA T</a>
+                                </td>
+                                <td>SECRETARY (MALE)</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/prathiksha-b-937363346?utm_source=share_via&utm_content=profile&utm_medium=member_android"  class="link" >PRATHIKSHA B
+
+                                    </a>
+
+
+                                </td>
+                                <td>SECRETARY (FEMALE)</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>
+                                    
+                                    <a href="https://www.linkedin.com/in/aswin-raj-s-15a082410?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link" >
+                                    ASWIN RAJ S</a>
+                                
+                                </td>
+                                <td>TREASURER</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/vishva-r-83a750356" class="link" >
+                                    
+                                    VISHVA R</a>
+                                
+                                </td>
+                                <td>HEAD OF HR & EVENTS (MALE)</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/moshitha-magesh-9ab048329?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link" >
+                                    
+                                    
+                                    MOSHITHA M</a>
+                                
+                                </td>
+                                <td>HEAD OF HR & EVENTS (FEMALE)</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/kamaliniashokkumar?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link" >
+                                    
+                                    
+                                    KAMALINI A</a>
+                                
+                                </td>
+                                <td>HEAD OF TECHNICAL & EDITORIAL BOARD</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>MITHRA K</td>
+                                <td>HEAD OF BLOOD REQUEST</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/afsharbegum1518?utm_source=share_via&utm_content=profile&utm_medium=member_android"class="link" >
+                                    
+                                    AFSHAR BEGUM A</a>
+                                </td>
+                                <td>HEAD OF LOGISTICS</td>
+                            </tr>
+                            <tr>
+                                <td>11.</td>
+                                <td>
+                                   <a href="https://www.linkedin.com/in/yazhini-karuppaiah-ba390b357?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link">    
+                                    
+                                    YAZHINI K</a>
+                                </td>
+                                <td>HEAD OF PERMISSION & DOCUMENTATION</td>
+                            </tr>
+                            <tr>
+                                <td>12.</td>
+                                <td>
+                                    
+                                    <a href="https://www.linkedin.com/in/bhavani-05-s"class="link" >
+                                    
+                                    BHAVANI S</a>
+                                </td>
+                                <td>HEAD OF ALUMNI RELATIONS</td>
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>
+                                    <a href="https://www.linkedin.com/in/subhiksha-velusamy-849b213a6?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link">
+
+                                    SUBHIKSHA V</a>
+                                </td>
+                                <td>HEAD OF DESIGN</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="oblist26" class="hidden">
+                        <h4 class="w3-center">
+                            <span class=" w3-wide">
+                                <div class="ob-header-row">
+                                OFFICE BEARERS
+                                <button onclick="showYear(27)" class="yr-btn" style="opacity: 0.5;">2026-2027</button>
+                                <button onclick="showYear(26)" class="blink2026 yr-btn" style="transform: scale(1.15);">
+                                    2025-2026
+                                </button>
+                                <button onclick="showYear(25)" class="yr-btn" style="opacity: 0.5; color: gray;">2024-2025</button>
+                                <button onclick="showYear(24)" class="yr-btn" style="opacity: 0.5; color: purple;">2023-2024</button>
+                                <button onclick="showYear(23)" class="yr-btn" style="opacity: 0.5; color: orange;">2022-2023</button>
+                            </div>
                             </span>
                         </h4>
 
@@ -436,9 +613,30 @@
                                 </td>
                                 <td>HR</td>
                             </tr>
+                             <tr>
+                                <td>8.</td>
+                                <td>
+                                    SNEHA MANIKANDAN
+                                </td>
+                                <td>HR</td>
+                            </tr>
+                             <tr>
+                                <td>9.</td>
+                                <td>
+                                    KHAIYLASH V
+                                </td>
+                                <td>HR</td>
+                            </tr>
+                             <tr>
+                                <td>10.</td>
+                                <td>
+                                    BHAVANI S
+                                </td>
+                                <td>HR</td>
+                            </tr>
                             <tr>
 
-                                <td>8.</td>
+                                <td>11.</td>
                                 <td>
                                     MOSHITHA M
                                 </td>
@@ -446,7 +644,7 @@
                             </tr>                            
 
                             <tr>
-                                <td>9.</td>
+                                <td>12.</td>
                                 <td>
                                     <a href="https://in.linkedin.com/in/varunesh-palanikumar-b067761ab" class="link">VARUNESH P</a>
                                 </td>
@@ -454,7 +652,7 @@
                             </tr>
 
                             <tr>
-                                <td>10.</td>
+                                <td>13.</td>
                                 <td>
                                     <a href="https://www.linkedin.com/in/vishva-r-83a750356" class="link">VISHVA R</a>
                                 </td>
@@ -462,7 +660,7 @@
                             </tr>
 
                             <tr>
-                                <td>11.</td>
+                                <td>14.</td>
                                 <td>
                                     <a href="https://www.linkedin.com/in/dhaarini-r-46618a35b" class="link"> DHAARINI R</a>
                                 </td>
@@ -470,7 +668,7 @@
                             </tr>
 
                             <tr>
-                                <td>12.</td>
+                                <td>15.</td>
                                 <td>
                                     <a href="https://www.linkedin.com/in/gunavathy-k-s-974929357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">GUNAVATHY K S</a>
                                 </td>
@@ -478,42 +676,57 @@
                             </tr>
 
                             <tr>
-                                <td>13.</td>
+                                <td>16.</td>
                                 <td>
                                     SUBHASHINI G
                                 </td>
                                 <td>DOCUMENTATION</td>
                             </tr>
-                           <td>14.</td>
+                           <td>17.</td>
                                 <td>
                                     <a href="https://www.linkedin.com/in/a-aanandha-raman-844249352/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">AANANDHA RAMAN</a>
                                 </td>
                                 <td>DOCUMENTATION</td>
                             </tr>
                             <tr>
-                                <td>15.</td>
+                                <td>18.</td>
                                 <td>
                                     ASWIN RAJ S
                                 </td>
                                 <td>ALUMINI RELATIONS</td>
                             </tr>
+
+                             <tr>
+                                <td>19.</td>
+                                <td>
+                                    KAMALINI A
+                                </td>
+                                <td>ALUMINI RELATIONS</td>
+                            </tr> 
                             <tr>
-                                <td>16.</td>
+                                <td>20.</td>
                                 <td>
                                     MADHAN M
                                 </td>
                                 <td>MEDIA</td>
                             </tr>
+                             <tr>
+                                <td>21.</td>
+                                <td>
+                                    JUMANA BEGAM A K
+                                </td>
+                                <td>CONTENTS</td>
+                            </tr>
 
                             <tr>
-                                <td>17.</td>
+                                <td>22.</td>
                                 <td>
                                     <a href="https://linkedin.com/in/harshitha-ganesh-%20601658323" class="link">HARSHITHA GANESH </a>
                                 </td>
                                 <td>LOGISTICS AND WEBSITE</td>
                             </tr>
                             <tr>
-                                <td>18.</td>
+                                <td>23.</td>
                                 <td>
                                     MITHRA K
                                 </td>
@@ -521,7 +734,7 @@
                             </tr>
 
                             <tr>
-                                <td>19.</td>
+                                <td>24.</td>
                                 <td>
                                     <a href="https://www.linkedin.com/in/subhiksha-undefined-849b213a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link">SUBHIKSHA V</a>
                                 </td>
@@ -529,7 +742,7 @@
                             </tr>
 
                             <tr>
-                                <td>20.</td>
+                                <td>25.</td>
                                 <td>
                                     SANDANAMARI S
                                 </td>
@@ -543,13 +756,14 @@
                     <div id="oblist25" class="hidden">
                         <h4 class="w3-center">
                             <span class=" w3-wide">
+                                <div class="ob-header-row">
                                 OFFICE BEARERS
-                                <button onclick="showYear(26)" style="opacity:0.5;">
-                                    <span style="color:red;">20</span><span style="color:green;">26</span>
-                                </button>
-                                <button onclick="showYear(25)" style="transform: scale(1.3); color: gray;">2025</button>
-                                <button onclick="showYear(24)" style="opacity: 0.5; color: purple;">2024</button>
-                                <button onclick="showYear(23)" style="opacity: 0.5; color: orange;">2023</button>
+                                <button onclick="showYear(27)" class="yr-btn" style="opacity: 0.5;">2026-2027</button>
+                                <button onclick="showYear(26)" class="yr-btn" style="opacity:0.5;">2025-2026</button>
+                                <button onclick="showYear(25)" class="yr-btn" style="transform: scale(1.15); color: gray;">2024-2025</button>
+                                <button onclick="showYear(24)" class="yr-btn" style="opacity: 0.5; color: purple;">2023-2024</button>
+                                <button onclick="showYear(23)" class="yr-btn" style="opacity: 0.5; color: orange;">2022-2023</button>
+                            </div>
                             </span>
                         </h4>
 
@@ -659,13 +873,14 @@
                      <div id="oblist24" class="hidden">
                         <h4 class=" w3-center">
                             <span class="w3-wide">
+                                <div class="ob-header-row">
                                 OFFICE BEARERS
-                                <button onclick="showYear(26)" style="opacity:0.5;">
-                                    <span style="color:red;">20</span><span style="color:green;">26</span>
-                                </button>
-                                <button onclick="showYear(25)" style="opacity: 0.5; color: gray;">2025</button>
-                                <button onclick="showYear(24)" style="transform: scale(1.3); color: purple;">2024</button>
-                                <button onclick="showYear(23)" style="opacity: 0.5; color: orange;">2023</button>
+                                <button onclick="showYear(27)" class="yr-btn" style="opacity: 0.5;">2026-2027</button>
+                                <button onclick="showYear(26)" class="yr-btn" style="opacity:0.5;">2025-2026</button>
+                                <button onclick="showYear(25)" class="yr-btn" style="opacity: 0.5; color: gray;">2024-2025</button>
+                                <button onclick="showYear(24)" class="yr-btn" style="transform: scale(1.15); color: purple;">2023-2024</button>
+                                <button onclick="showYear(23)" class="yr-btn" style="opacity: 0.5; color: orange;">2022-2023</button>
+                            </div>
                             </span>
                         </h4>
                         <table border="1">
@@ -776,13 +991,14 @@
                    <div id="oblist23" class="hidden">
                         <h4 class="w3-center">
                             <span class=" w3-wide">
+                                <div class="ob-header-row">
                                 OFFICE BEARERS
-                                <button onclick="showYear(26)" style="opacity:0.5;">
-                                    <span style="color:red;">20</span><span style="color:green;">26</span>
-                                </button>
-                                <button onclick="showYear(25)" style="opacity: 0.5; color: gray;">2025</button>
-                                <button onclick="showYear(24)" style="opacity: 0.5; color: purple;">2024</button>
-                                <button onclick="showYear(23)" style="transform: scale(1.3); color: orange;">2023</button>
+                                <button onclick="showYear(27)" class="yr-btn" style="opacity: 0.5;">2026-2027</button>
+                                <button onclick="showYear(26)" class="yr-btn" style="opacity:0.5;">2025-2026</button>
+                                <button onclick="showYear(25)" class="yr-btn" style="opacity: 0.5; color: gray;">2024-2025</button>
+                                <button onclick="showYear(24)" class="yr-btn" style="opacity: 0.5; color: purple;">2023-2024</button>
+                                <button onclick="showYear(23)" class="yr-btn" style="transform: scale(1.15); color: orange;">2022-2023</button>
+                            </div>
                             </span>
                         </h4>
                         <table border="1">
@@ -922,7 +1138,7 @@
             </div>
             <script type="text/javascript">
                 function showYear(year) {
-                    const years = [26,25, 24, 23];
+                    const years = [27, 26, 25, 24, 23];
                     years.forEach(y => {
                         const element = document.getElementById('oblist' + y);
                         if (y === year) {
